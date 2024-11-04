@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+.montserrat {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+}
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+}
+.source-code-pro {
+  font-family: "Source Code Pro", serif;
+  font-optical-sizing: auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,16 +24,56 @@
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  inline-size: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background-color: #fcf9f2;
+  margin-block: 0.3rem;
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #017a3a;
+  border-radius: 1rem;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .max-Width {
-  max-inline-size: 1440px;
+  max-inline-size: 1400px;
+  inline-size: 100%;
   margin: 0 auto;
   padding: 0;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-inline-size: 768px) {
     max-inline-size: 100%;
     padding: 0 1.2rem;
+  }
+}
+
+.footer {
+  h2 {
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2rem; /* 114.286% */
+    letter-spacing: 0.0175rem;
+  }
+  ul {
+    li {
+      a {
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem;
+      }
+    }
+  }
+  p{
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
   }
 }
