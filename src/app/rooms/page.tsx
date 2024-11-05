@@ -16,31 +16,31 @@ const page = () => {
         {
             "id": 2,
             "image": RoomImage,
-            "name": "Crystal Stone Cottage",
-            "description": "Our 3 BHK Luxury Cottages provide an exquisite retreat that combines spacious elegance with stunning natural surroundings. Our cottage features beautifully appointed bedroom with plush bedding to ensure a restful night’s sleep. The open-plan living area includes a cozy lounge with comfortable seating and a dining space perfect for gathering with family and friends. With modern amenities and stylish decor, our cottages offer a serene and inviting atmosphere, making them an ideal choice for a memorable getaway. Enjoy the perfect blend of comfort and luxury in your own private haven.",
+            "name": "Stone Bite Cottage",
+            "description": "Our 2 BHK Luxury Cottages offer a delightful escape, combining stylish comfort with a touch of nature. Designed to accommodate up to four guests, each cottage features elegantly furnished bedrooms, ensuring a restful stay for everyone. The inviting living area boasts comfortable seating and a dining space, perfect for enjoying meals together. With modern amenities and tasteful decor, our cottages create a warm and welcoming ambiance, ideal for a relaxing getaway. Experience the perfect balance of luxury and tranquility in your own charming retreat.",
             "linkName": "Book Now",
             "linkUrl": "https://www.google.com/",
         },
         {
             "id": 3,
             "image": RoomImage,
-            "name": "Crystal Stone Cottage",
-            "description": "Our 3 BHK Luxury Cottages provide an exquisite retreat that combines spacious elegance with stunning natural surroundings. Our cottage features beautifully appointed bedroom with plush bedding to ensure a restful night’s sleep. The open-plan living area includes a cozy lounge with comfortable seating and a dining space perfect for gathering with family and friends. With modern amenities and stylish decor, our cottages offer a serene and inviting atmosphere, making them an ideal choice for a memorable getaway. Enjoy the perfect blend of comfort and luxury in your own private haven.",
+            "name": "Wood Slice Cottages",
+            "description": "The Wood Slice Cottages at Oak Climbing Resort, Mukteshwar, offer a cozy blend of rustic charm and modern comfort, with wooden interiors and breathtaking views of the Himalayas. Each cottage features comfortable bedding, attached bathrooms, and private balconies for a peaceful retreat. Perfect for nature lovers and adventure seekers, guests can relax amidst the serene surroundings or explore the resort's outdoor activities.",
             "linkName": "Book Now",
             "linkUrl": "https://www.google.com/",
         },
         {
             "id": 4,
             "image": RoomImage,
-            "name": "Crystal Stone Cottage",
-            "description": "Our 3 BHK Luxury Cottages provide an exquisite retreat that combines spacious elegance with stunning natural surroundings. Our cottage features beautifully appointed bedroom with plush bedding to ensure a restful night’s sleep. The open-plan living area includes a cozy lounge with comfortable seating and a dining space perfect for gathering with family and friends. With modern amenities and stylish decor, our cottages offer a serene and inviting atmosphere, making them an ideal choice for a memorable getaway. Enjoy the perfect blend of comfort and luxury in your own private haven.",
+            "name": "Mud House",
+            "description": "Welcome to our Mud House, a unique retreat that beautifully merges traditional charm with modern comforts. This inviting space is designed with comfortable bedding to ensure a restful night’s sleep. The open-plan living area creates a warm and welcoming atmosphere, perfect for unwinding after a day of adventure. With its earthy decor and natural materials, the Mud House offers a serene escape that allows you to connect with nature. Enjoy all the modern amenities in a setting that celebrates simplicity and sustainability, making it the perfect choice for a memorable getaway.",
             "linkName": "Book Now",
             "linkUrl": "https://www.google.com/",
         },
 
     ]
     return (
-        <div>
+        <div className="py-14">
             <PageTopBanner title={"Accommodation"} para={"Experience unparalleled comfort and luxury at Anandha Inn"} />
 
             <Container>

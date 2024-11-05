@@ -5,8 +5,9 @@ import Image from "next/image";
 const Banner = () => {
   return (
     <section>
+      <PageTopBanner title={"About Us"} para={"Perched at 7,500 feet in the picturesque hill town of Mukteshwar, Oak Climbing Resort is where adventure meets serenity. Surrounded by dense oak forests and offering panoramic views of the snow-capped Himalayan ranges, our resort provides the ideal setting for both thrill-seekers and nature lovers"} />
+
       <Section className="bg-bgLight">
-        <PageTopBanner title={"About Us"} para={"Perched at 7,500 feet in the picturesque hill town of Mukteshwar, Oak Climbing Resort is where adventure meets serenity. Surrounded by dense oak forests and offering panoramic views of the snow-capped Himalayan ranges, our resort provides the ideal setting for both thrill-seekers and nature lovers"} />
         <Container>
           <div className="flex flex-col gap-20">
             <div className="grid grid-cols-4 gap-4 ">

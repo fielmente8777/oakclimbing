@@ -1,14 +1,43 @@
-import { Container, Section, SectionHeading } from "@/components";
+import { Card, Container, Section, SectionHeading } from "@/components";
 import PageTopBanner from "@/components/PageTopBanner";
+import BlogImage from "../../../public/images/room.jpeg"
 
 const page = () => {
+
+  const BlogDatas = [
+    {
+      "id": 1,
+      "blog": true,
+      "image": BlogImage,
+      "title": "Best night photo at lakecious",
+
+    },
+    {
+      "id": 1,
+      "blog": true,
+      "image": BlogImage,
+      "title": "Top 5 Reasons Why to Visit Oak Climbing Resort – Luxury Hotel/Resort near Bhimtal",
+
+    },
+    {
+      "id": 1,
+      "blog": true,
+      "image": BlogImage,
+      "title": "Best night photo at lakecious",
+
+    }
+  ]
   return (
-    <div>
+    <div className="py-14">
       <PageTopBanner title={"Blogs"} para={"Blogs Oak Climbing Resort is located in the Mukteshwar- the land of sublime natural beauty and serene spirituality, where you can connect with your inner self. Oak Resort is ideal for those looking for tranquility, peace, and beautiful settings of the hills"} />
 
       <Container>
-        <div className="space-y-10 mt-10">
-          blog
+
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+          {BlogDatas.map((blog, index) => (
+            <Card data={blog} key={index} />
+          ))}
         </div>
 
       </Container>

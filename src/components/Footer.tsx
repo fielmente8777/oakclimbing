@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
     <footer className="max-w-[1590px] mx-auto source-code-pro footer">
       <section className="bg-secondary py-20 text-white">
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-[2.2rem]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-[2.2rem] tracking-wide">
             {/* logo */}
             <div className="flex flex-col gap-4">
               <Link
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
             </div>
             {/* quick links */}
             <div className="flex flex-col gap-4 lg:ms-8">
-              <h2 className="text-lg playfair-display font-semibold">
+              <h2 className="text-lg playfair-display ">
                 Quick Links
               </h2>
               <ul className="flex flex-col gap-2">
@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
                   <li key={index}>
                     <Link
                       href={item.path}
-                      className="hover:scale-105 hover:text-primary transition duration-300 ease-in-out"
+                      className="font-medium hover:scale-105 hover:text-primary transition duration-300 ease-in-out"
                     >
                       {item.name}
                     </Link>
@@ -107,15 +107,28 @@ const Footer: React.FC = () => {
         </Container>
       </section>
 
-      <section className="bg-primary py-3 text-white">
+      <section className="bg-primary py-3 text-white tracking-wide">
         <Container>
-          <p className="text-center capitalize gap-2 flex items-center justify-center">
-            <span>
-              <span className="sr-only">copyright</span>
-              <CopyRight />
-            </span>{" "}
-            {new Date().getFullYear()} All rights reserved.
-          </p>
+          <div className="flex gap-5 justify-center">
+            <p className="text-center capitalize gap-2 flex items-center justify-center">
+              <span>
+                <span className="sr-only">copyright</span>
+                <CopyRight />
+              </span>{" "}
+              {new Date().getFullYear()} Oak Climbing Resort
+            </p>
+            <p className="text-center capitalize gap-2 flex items-center justify-center">
+              <li>
+                All rights reserved.
+              </li>
+            </p>
+            <p className="text-center capitalize gap-2 flex items-center justify-center">
+              <li>
+                Designed & Developed by{" "}<span className="font-semibold">Eazotel</span>
+              </li>
+            </p>
+          </div>
+
         </Container>
       </section>
     </footer>

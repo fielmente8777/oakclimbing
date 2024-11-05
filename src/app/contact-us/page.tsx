@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <main>
+    <main className="py-14">
       <PageTopBanner title={"Contact Us"} para={"If you have any inquiries about booking your stay at OAK CLIMBING RESORT, please don't hesitate to contact us. Our dedicated team is here to provide assistance and ensure that your experience with us exceeds expectations"} />
       <Section>
         <Container>
