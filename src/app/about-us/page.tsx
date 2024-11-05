@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const page = () => {
   return (
-    <main>
+    <main className="my-14">
       <Banner />
       <Section>
         <Container>
@@ -18,16 +18,16 @@ const page = () => {
       </Section>
       <WhyChooseUs />
       <Section>
-        <div className="w-full relative aspect-[2/1]">
+        <div className="w-full relative aspect-[4/1.5]">
           <Image
-            src="/images/banner.png"
+            src="/images/banner.webp"
             alt="alt"
             fill
             className="object-cover"
           />
         </div>
       </Section>
-      <section className="flex justify-center lg:pt-10 lg:pb-20 pt-5 pb-10">
+      <section className="flex justify-center ">
         <Button href="/about-us">Book Now</Button>
       </section>
     </main>

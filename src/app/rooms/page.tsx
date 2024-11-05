@@ -1,7 +1,8 @@
-import { Container, Section } from "@/components";
+import { Container } from "@/components";
 import RoomsCard from "./components/RoomsCard";
 import RoomImage from "../../../public/images/room.jpeg";
 import PageTopBanner from "@/components/PageTopBanner";
+import Amenities from "./components/Amenities";
 
 const page = () => {
   const roomDatas = [
@@ -43,24 +44,21 @@ const page = () => {
     },
   ];
   return (
-    <main>
+    <div className="py-14">
       <PageTopBanner
         title={"Accommodation"}
         para={"Experience unparalleled comfort and luxury at Anandha Inn"}
       />
 
-      <Section>
-        <Container>
+      <Container>
+        <div className="space-y-10 mt-10">
           {roomDatas.map((roomData, index) => (
-            <div className="mb-10" key={index}>
-              <RoomsCard roomData={roomData} />
-            </div>
+            <RoomsCard roomData={roomData} key={index} />
           ))}
-        </Container>
-      </Section>
-
-      
-    </main>
+        </div>
+      </Container>
+      <Amenities />
+    </div>
   );
 };
 

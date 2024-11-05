@@ -1,17 +1,34 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-const Card = () => {
+interface CardProps {
+  data: {
+    id: number;
+    blog: boolean;
+    image: string | StaticImageData;
+    title: string;
+  };
+}
+const Card: React.FC<CardProps> = ({ data }) => {
   return (
-    <div className="w-full flex flex-col gap-8 justify-center items-center">
-      <div className="relative aspect-[4/2.5] w-full rounded-lg overflow-hidden">
+    <div className="w-full flex flex-col gap-4">
+      <div
+        className={`relative ${data?.blog === true ? "aspect-[4/3]" : "aspect-[4/2.5]"} rounded-lg w-full overflow-hidden`}
+      >
         <Image
-          src="/images/banner.png"
+          src="/images/banner.webp"
           alt="Nearby"
           fill
           className="w-full h-full object-cover"
         />
       </div>
-      <h3 className="text-xl font-semibold">Nearby</h3>
+
+      {data?.blog === true ? (
+        <h3 className="text-[16px] text-left font-medium text-primary ">
+          {data?.title}
+        </h3>
+      ) : (
+        <h3 className="text-xl text-center font-medium">Nearby</h3>
+      )}
     </div>
   );
 };

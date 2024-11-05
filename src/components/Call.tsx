@@ -4,7 +4,7 @@ import { IoCall } from "react-icons/io5";
 
 function Call() {
   return (
-    <div className="fixed bottom-10 lg:left-3  left-4 z-20 cursor-pointer">
+    <div className="fixed bottom-20 lg:left-3  left-4 z-20 cursor-pointer">
       <Link
         href="tel:+917998888851"
         target="_blank"

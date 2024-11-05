@@ -21,7 +21,7 @@ const Aboutus = () => {
                   } overflow-hidden hover:border-4 border-white hover:shadow-3xl duration-1000 transition ease-in-out relative aspect-auto`}
                 >
                   <Image
-                    src="/images/banner.png"
+                    src="/images/banner.webp"
                     alt="view"
                     priority={true}
                     fill

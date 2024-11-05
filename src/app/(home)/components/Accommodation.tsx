@@ -1,6 +1,6 @@
 import RoomsCard from "@/app/rooms/components/RoomsCard";
 import { Button, Container, Section, SectionHeading } from "@/components";
-import RoomImage from "../../../../public/images/room.jpeg"
+import RoomImage from "../../../../public/images/room.webp"
 const Accommodation = () => {
 
   const roomDatas = [
@@ -15,8 +15,8 @@ const Accommodation = () => {
     {
       "id": 2,
       "image": RoomImage,
-      "name": "Crystal Stone Cottage",
-      "description": "Our 3 BHK Luxury Cottages provide an exquisite retreat that combines spacious elegance with stunning natural surroundings. Our cottage features beautifully appointed bedroom with plush bedding to ensure a restful night’s sleep. The open-plan living area includes a cozy lounge with comfortable seating and a dining space perfect for gathering with family and friends. With modern amenities and stylish decor, our cottages offer a serene and inviting atmosphere, making them an ideal choice for a memorable getaway. Enjoy the perfect blend of comfort and luxury in your own private haven.",
+      "name": "Stone Bite Cottage",
+      "description": "Our 2 BHK Luxury Cottages offer a delightful escape, combining stylish comfort with a touch of nature. Designed to accommodate up to four guests, each cottage features elegantly furnished bedrooms, ensuring a restful stay for everyone. The inviting living area boasts comfortable seating and a dining space, perfect for enjoying meals together. With modern amenities and tasteful decor, our cottages create a warm and welcoming ambiance, ideal for a relaxing getaway. Experience the perfect balance of luxury and tranquility in your own charming retreat.",
       "linkName": "Book Now",
       "linkUrl": "https://www.google.com/",
     },

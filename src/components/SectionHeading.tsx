@@ -4,6 +4,7 @@ interface Props {
   h1?: boolean;
   description?: string;
   className?: string;
+  color?: string;
 }
 
 const SectionHeading: React.FC<Props> = ({
@@ -12,21 +13,28 @@ const SectionHeading: React.FC<Props> = ({
   h1 = false,
   description,
   className = "",
+  color = "",
 }) => {
   return (
-    <article className={`text-center flex flex-col gap-2 ${className}`}>
+    <article className={`text-center flex flex-col gap-4 ${className}`}>
       {h1 ? (
         <h1 className="lg:text-5xl/tight playfair-display text-3xl uppercase font-bold text-primary">
-          {span && <span className="font-normal text-dark">{span}</span>} {span && <br />}{" "}
-          {title}
+          {span && <span className="font-normal text-dark">{span}</span>}{" "}
+          {span && <br />} {title}
         </h1>
       ) : (
-        <h2 className="lg:text-[2.5rem]/none playfair-display text-3xl capitalize font-bold text-primary">
+        <h2 className="lg:text-[2.5rem]/none playfair-display text-3xl capitalize font-semibold text-primary">
           {span && <span className="font-normal">{span}</span>} {span && <br />}
           {title}
         </h2>
       )}
-      {description && <p className="text-secondary font-medium text-[22px]">{description}</p>}
+      {description && (
+        <p
+          className={` font-normal text-lg ${color ? color : "text-secondary"}`}
+        >
+          {description}
+        </p>
+      )}
     </article>
   );
 };

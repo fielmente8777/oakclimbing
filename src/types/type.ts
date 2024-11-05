@@ -9,3 +9,9 @@ export interface roomCardType {
         linkUrl: string;
     }
 }
+
+
+export interface amenitiesProps {
+    icon: React.ReactNode;
+    title: string;
+}

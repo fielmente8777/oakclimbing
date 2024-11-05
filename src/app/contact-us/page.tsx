@@ -1,12 +1,17 @@
-import { Container, Section } from "@/components";
+import { Container, Form, LazyLoadedMap, Section } from "@/components";
 import PageTopBanner from "@/components/PageTopBanner";
 import { contactLink } from "@/data/footerLink";
 import Link from "next/link";
 
 const page = () => {
   return (
-    <main>
-      <PageTopBanner title={"Contact Us"} para={"If you have any inquiries about booking your stay at OAK CLIMBING RESORT, please don't hesitate to contact us. Our dedicated team is here to provide assistance and ensure that your experience with us exceeds expectations"} />
+    <main className="py-14">
+      <PageTopBanner
+        title={"Contact Us"}
+        para={
+          "If you have any inquiries about booking your stay at OAK CLIMBING RESORT, please don't hesitate to contact us. Our dedicated team is here to provide assistance and ensure that your experience with us exceeds expectations"
+        }
+      />
       <Section>
         <Container>
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
@@ -50,8 +55,16 @@ const page = () => {
                 ))}
               </ul>
             </div>
+            <div className="">
+              <Form />
+            </div>
           </div>
         </Container>
+      </Section>
+      <Section>
+        <div className="aspect-[4/1.3]">
+          <LazyLoadedMap src="" />
+        </div>
       </Section>
     </main>
   );

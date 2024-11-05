@@ -11,5 +11,7 @@ import SectionHeading from './SectionHeading';
 import Banner from './Banner';
 import Button from './Button';
 import Card from './Card';
+import AmenitiesCard from './AmenitiesCard';
+import Form from './Form';
 
-export { Banner, Button, Card, Section, SectionHeading, Container, NavBar, Footer, Call, Whatsapp, EmbeddedMap, LazyLoadedMap, SliderSwip }
+export { Banner, Button, Card, AmenitiesCard, Section, SectionHeading, Container, NavBar, Form, Footer, Call, Whatsapp, EmbeddedMap, LazyLoadedMap, SliderSwip }

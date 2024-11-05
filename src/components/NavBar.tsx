@@ -44,7 +44,7 @@ const NavBar: React.FC = () => {
               className="cursor-pointer relative h-14 aspect-[4/1] flex items-center justify-center"
             >
               <Image
-                src="/images/logo.png"
+                src="/images/logo.webp"
                 alt="logo"
                 fill
                 quality={100}
