@@ -1,6 +1,6 @@
 import { Container } from "@/components";
 import RoomsCard from "./components/RoomsCard";
-import RoomImage from "../../../public/images/room.jpeg";
+import RoomImage from "../../../public/images/room.webp";
 import PageTopBanner from "@/components/PageTopBanner";
 import Amenities from "./components/Amenities";
 

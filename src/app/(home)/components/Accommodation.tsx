@@ -31,7 +31,7 @@ const Accommodation = () => {
         <Container>
           <div className="space-y-10 mt-10">
             {roomDatas.map((roomData, index) => (
-              <RoomsCard roomData={roomData} key={index} id={roomData.id} />
+              <RoomsCard roomData={roomData} key={index} />
             ))}
           </div>
 

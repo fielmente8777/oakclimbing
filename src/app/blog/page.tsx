@@ -1,6 +1,6 @@
 import { Card, Container } from "@/components";
 import PageTopBanner from "@/components/PageTopBanner";
-import BlogImage from "../../../public/images/room.jpeg"
+import BlogImage from "../../../public/images/room.webp";
 
 const page = () => {
 
