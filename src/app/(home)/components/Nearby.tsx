@@ -5,8 +5,8 @@ import {
   Container,
   Button,
   SliderSwip,
+  Card,
 } from "@/components";
-import Image from "next/image";
 import { Pagination } from "swiper/modules";
 
 const Nearby = () => {
@@ -33,19 +33,7 @@ const Nearby = () => {
               },
             }}
           >
-            {() => (
-              <div className="w-full flex flex-col gap-8 justify-center items-center">
-                <div className="relative aspect-[4/2.5] w-full rounded-lg overflow-hidden">
-                  <Image
-                    src="/images/banner.png"
-                    alt="Nearby"
-                    fill
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold">Nearby</h3>
-              </div>
-            )}
+            {() => <Card />}
           </SliderSwip>
 
           <div className="nearby-pagination w-full flex justify-center gap-1 cursor-pointer items-center mt-10 mb-4"></div>

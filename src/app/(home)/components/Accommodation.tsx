@@ -1,6 +1,27 @@
+import RoomsCard from "@/app/rooms/components/RoomsCard";
 import { Button, Container, Section, SectionHeading } from "@/components";
-
+import RoomImage from "../../../../public/images/room.jpeg"
 const Accommodation = () => {
+
+  const roomDatas = [
+    {
+      "id": 1,
+      "image": RoomImage,
+      "name": "Crystal Stone Cottage",
+      "description": "Our 3 BHK Luxury Cottages provide an exquisite retreat that combines spacious elegance with stunning natural surroundings. Our cottage features beautifully appointed bedroom with plush bedding to ensure a restful night’s sleep. The open-plan living area includes a cozy lounge with comfortable seating and a dining space perfect for gathering with family and friends. With modern amenities and stylish decor, our cottages offer a serene and inviting atmosphere, making them an ideal choice for a memorable getaway. Enjoy the perfect blend of comfort and luxury in your own private haven.",
+      "linkName": "Book Now",
+      "linkUrl": "https://www.google.com/",
+    },
+    {
+      "id": 2,
+      "image": RoomImage,
+      "name": "Crystal Stone Cottage",
+      "description": "Our 3 BHK Luxury Cottages provide an exquisite retreat that combines spacious elegance with stunning natural surroundings. Our cottage features beautifully appointed bedroom with plush bedding to ensure a restful night’s sleep. The open-plan living area includes a cozy lounge with comfortable seating and a dining space perfect for gathering with family and friends. With modern amenities and stylish decor, our cottages offer a serene and inviting atmosphere, making them an ideal choice for a memorable getaway. Enjoy the perfect blend of comfort and luxury in your own private haven.",
+      "linkName": "Book Now",
+      "linkUrl": "https://www.google.com/",
+    },
+
+  ]
   return (
     <Section>
       <Container>
@@ -8,13 +29,12 @@ const Accommodation = () => {
       </Container>
       <section className="bg-bgLight">
         <Container>
-          <SectionHeading
-            className="lg:max-w-3xl lg:mx-auto text-center"
-            h1
-            span="Welcome to"
-            title="Oak Climbing Resort"
-            description="Explore the Untouched Paradise In The Lap Of Himalayas At Oak Climbing Resort."
-          />
+          <div className="space-y-10 mt-10">
+            {roomDatas.map((roomData, index) => (
+              <RoomsCard roomData={roomData} key={index} id={roomData.id} />
+            ))}
+          </div>
+
         </Container>
       </section>
       <div className="flex justify-center pt-10">
