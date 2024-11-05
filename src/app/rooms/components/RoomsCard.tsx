@@ -5,7 +5,7 @@ import React from "react";
 
 const RoomsCard: React.FC<roomCardType> = ({ roomData }) => {
   return (
-    <div className="rounded-[8px] overflow-hidden grid grid-cols-1 md:grid-cols-2">
+    <div className={`rounded-[8px] overflow-hidden lg:grid flex ${roomData.id % 2 === 0 ? "flex-col-reverse" : "flex-col"} grid-cols-2`}>
       <div
         className={`relative aspect-[4/3] w-full ${roomData.id % 2 === 0 ? "order-2" : "order-1"}`}
       >
@@ -17,7 +17,7 @@ const RoomsCard: React.FC<roomCardType> = ({ roomData }) => {
         />
       </div>
       <div
-        className={`flex flex-col flex-grow gap-5 px-10 justify-center bg-[#FCF9F2] ${roomData.id % 2 === 0 ? "order-1" : "order-2"}`}
+        className={`flex flex-col flex-grow gap-5 lg:px-10 px-5 justify-center bg-[#FCF9F2] ${roomData.id % 2 === 0 ? "order-1" : "order-2"}`}
       >
         <h1 className="text-[28px] playfair-display font-medium">
           {roomData.name}
