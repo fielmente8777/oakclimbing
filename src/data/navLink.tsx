@@ -13,7 +13,7 @@ export const navLink = [
   },
   {
     name: "Accomodation",
-    path: "/accomodation/",
+    path: "/rooms/",
   },
   {
     name: "Gallery",

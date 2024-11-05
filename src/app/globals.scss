@@ -8,6 +8,7 @@
   font-family: "Montserrat", serif;
   font-optical-sizing: auto;
 }
+
 .playfair-display {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
@@ -54,11 +55,13 @@
 ::-webkit-scrollbar {
   inline-size: 0.5rem;
 }
+
 ::-webkit-scrollbar-track {
   background-color: #fcf9f2;
   margin-block: 0.3rem;
   border-radius: 1rem;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: #017a3a;
   border-radius: 1rem;
@@ -69,10 +72,11 @@ body {
 }
 
 .max-Width {
-  max-inline-size: 1400px;
+  max-inline-size: 1300px;
   inline-size: 100%;
   margin: 0 auto;
   padding: 0;
+
   @media screen and (max-inline-size: 768px) {
     max-inline-size: 100%;
     padding: 0 1.2rem;
@@ -84,9 +88,11 @@ body {
     font-size: 1.75rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 2rem; /* 114.286% */
+    line-height: 2rem;
+    /* 114.286% */
     letter-spacing: 0.0175rem;
   }
+
   ul {
     li {
       a {
@@ -97,6 +103,7 @@ body {
       }
     }
   }
+
   p {
     font-size: 0.8rem;
     font-style: normal;
@@ -105,7 +112,7 @@ body {
   }
 }
 
-.nearby-pagination{
+.nearby-pagination {
   .swiper-pagination-bullet {
     background-color: #017a3a;
     block-size: 1rem;

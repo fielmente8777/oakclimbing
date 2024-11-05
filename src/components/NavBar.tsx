@@ -51,21 +51,19 @@ const NavBar: React.FC = () => {
               <li key={index}>
                 <Link
                   href={item.path}
-                  className={`relative px-6 py-4 montserrat group flex items-center justify-center uppercase transition duration-300 ease-in-out text-base font-medium ${
-                    pathName === item.path ? "text-primary" : "text-dark"
-                  } hover:text-primary hover:scale-105`}
+                  className={`relative px-6 py-4 montserrat group flex items-center justify-center uppercase transition duration-300 ease-in-out text-base font-medium ${pathName === item.path ? "text-primary" : "text-dark"
+                    } hover:text-primary hover:scale-105`}
                 >
                   {item.name}
                   <span
-                    className={`absolute bottom-2  left-0 h-[2px] bg-primary transition-all duration-300 ease-in-out ${
-                      pathName === item.path ? "w-full" : "w-0"
-                    } group-hover:w-full`}
+                    className={`absolute bottom-2  left-0 h-[2px] bg-primary transition-all duration-300 ease-in-out ${pathName === item.path ? "w-full" : "w-0"
+                      } group-hover:w-full`}
                   />
                 </Link>
               </li>
             ))}
           </ul>
-          <Button href="/contact" className="py-4">
+          <Button href="/contact" className="py-3">
             Book now
           </Button>
         </div>

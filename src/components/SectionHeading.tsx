@@ -26,7 +26,7 @@ const SectionHeading: React.FC<Props> = ({
           {title}
         </h2>
       )}
-      {description && <p className="text-secondary font-semibold text-xl">{description}</p>}
+      {description && <p className="text-secondary font-medium text-[22px]">{description}</p>}
     </article>
   );
 };

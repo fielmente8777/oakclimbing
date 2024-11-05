@@ -10,10 +10,10 @@ const config: Config = {
     extend: {
       colors: {
         primary: "#017A3A",
-        secondary:"#1C1D21",
-        dark:"#343434",
-        normal:"#777777",
-        bgLight:"#FCF9F2",
+        secondary: "#1C1D21",
+        dark: "#343434",
+        normal: "#777777",
+        bgLight: "#FCF9F2",
       },
     },
   },
