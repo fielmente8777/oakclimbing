@@ -3,7 +3,7 @@ interface container {
   id?: string;
   className?: string;
 }
-const Container: React.FC<container> = ({ children, id, className }) => {
+const Container: React.FC<container> = ({ children, id = "", className="" }) => {
   return (
     <div className={`${className} max-Width`} id={id}>
       {children}

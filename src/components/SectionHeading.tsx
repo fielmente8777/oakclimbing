@@ -23,14 +23,14 @@ const SectionHeading: React.FC<Props> = ({
           {span && <br />} {title}
         </h1>
       ) : (
-        <h2 className="lg:text-[2.5rem]/none playfair-display text-3xl capitalize font-semibold text-primary">
+        <h2 className="lg:text-[2.5rem]/none playfair-display text-2xl capitalize font-semibold text-primary">
           {span && <span className="font-normal">{span}</span>} {span && <br />}
           {title}
         </h2>
       )}
       {description && (
         <p
-          className={` font-normal text-lg ${color ? color : "text-secondary"}`}
+          className={` font-normal lg:text-lg text-base ${color ? color : "text-secondary"}`}
         >
           {description}
         </p>

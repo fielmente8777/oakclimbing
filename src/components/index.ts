@@ -13,5 +13,6 @@ import Button from './Button';
 import Card from './Card';
 import AmenitiesCard from './AmenitiesCard';
 import Form from './Form';
+import Testimonial from './Testimonial';
 
-export { Banner, Button, Card, AmenitiesCard, Section, SectionHeading, Container, NavBar, Form, Footer, Call, Whatsapp, EmbeddedMap, LazyLoadedMap, SliderSwip }
+export { Banner, Button, Card, AmenitiesCard, Section, Testimonial, SectionHeading, Container, NavBar, Form, Footer, Call, Whatsapp, EmbeddedMap, LazyLoadedMap, SliderSwip }

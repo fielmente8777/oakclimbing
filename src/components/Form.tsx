@@ -2,11 +2,11 @@
 
 import axios from "axios";
 import React, { useState } from "react";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 // import { countries } from "@/db/countryCode";
 
 const Form: React.FC = () => {
-  const router = useRouter();
+  // const router = useRouter();
   const [userName, setUserName] = useState("");
   const [userEmail, setUserEmail] = useState("");
   const [userMessage, setUserMessage] = useState("");
@@ -73,7 +73,8 @@ const Form: React.FC = () => {
         setUserPhone("");
         // setCountryCode("+91"); // Reset country code
         setFormRes(false);
-        router.push("/thank-you/");
+        // router.push("/thank-you/");
+        alert("Form submitted successfully!");
       } else {
         setFormRes(false);
         alert("Something went wrong!");
@@ -103,7 +104,7 @@ const Form: React.FC = () => {
       placeholder: "Phone Number*",
       required: true,
       content: (
-        <div className="flex gap-2 text-base">
+        <div className="flex gap-2 w-full text-base">
           {/* <select
             id="countryCode"
             name="countryCode"
@@ -128,7 +129,7 @@ const Form: React.FC = () => {
             placeholder="Phone Number*"
             value={userPhone}
             onChange={handlePhoneChange}
-            className="w-full bg-transparent rounded-md placeholder:text-white text-white no-spinner focus:outline-none"
+            className="w-full bg-transparent placeholder:text-white text-white no-spinner focus:outline-none"
           />
         </div>
       ),

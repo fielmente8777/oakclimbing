@@ -3,16 +3,27 @@ import { Banner, WhyChooseUs } from "./components";
 import Image from "next/image";
 
 const page = () => {
+  const data = {
+    title: "Experience hospitality at its finest",
+    description: [
+      "At Oak Climbing Resort, we specialize in creating an immersive, nature-centric experience for our guests. Whether you're an avid rock climber, an enthusiastic trekker, or simply seeking a peaceful mountain escape, we have something to offer.",
+      "For those looking to reconnect with nature, Oak Climbing Resort offers more than just activities. We provide curated experiences such as guided nature walks, birdwatching tours, and stargazing under the clear Himalayan skies.",
+      "Our accommodations are designed to offer a perfect blend of comfort and rustic charm. Guests can unwind in cozy rooms or eco-friendly cottages, all thoughtfully designed to reflect the beauty of the surrounding landscape. The resort’s restaurant serves fresh, locally sourced meals that capture the authentic flavors of the region, providing a true farm-to-table experience.",
+      "With personalized service, warm hospitality, and a commitment to sustainability, Oak Climbing Resort is dedicated to creating memorable experiences for every guest. Whether you’re visiting for an adventure-filled holiday, a quiet getaway, or a team-building retreat, our resort is your gateway to the unparalleled beauty of the Kumaon hills.",
+    ],
+  };
   return (
     <main className="my-14">
       <Banner />
       <Section>
         <Container>
-          <SectionHeading title="About Us" />
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            <div className="flex flex-col gap-4">
-              <p className=""></p>
-            </div>
+          <SectionHeading title={data.title} />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-8">
+            {data.description.map((para, index) => (
+              <p className="text-base font-normal text-normal" key={index}>
+                {para}
+              </p>
+            ))}
           </div>
         </Container>
       </Section>
@@ -20,7 +31,7 @@ const page = () => {
       <Section>
         <div className="w-full relative aspect-[4/1.5]">
           <Image
-            src="/images/banner.webp"
+            src="/images/discover.webp"
             alt="alt"
             fill
             className="object-cover"

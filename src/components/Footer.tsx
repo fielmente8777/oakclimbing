@@ -1,3 +1,4 @@
+"use client";
 import { CopyRight } from "@/utils/icon";
 import Container from "./Container";
 import Link from "next/link";
@@ -6,6 +7,7 @@ import Image from "next/image";
 import { policyLink, contactLink } from "@/data/footerLink";
 
 const Footer: React.FC = () => {
+  const year = new Date().getFullYear();
   return (
     <footer className="max-w-[1590px] mx-auto source-code-pro footer">
       <section className="bg-secondary py-20 text-white">
@@ -24,13 +26,13 @@ const Footer: React.FC = () => {
                   className="w-20 h-20"
                 />
               </Link>
-              <p className="text-center">Untouched Paradise In The Lap Of Himalayas</p>
+              <p className="text-center">
+                Untouched Paradise In The Lap Of Himalayas
+              </p>
             </div>
             {/* quick links */}
             <div className="flex flex-col gap-4 lg:ms-8">
-              <h2 className="text-lg playfair-display ">
-                Quick Links
-              </h2>
+              <h2 className="text-lg playfair-display ">Quick Links</h2>
               <ul className="flex flex-col gap-2">
                 {navLink.map((item, index) => (
                   <li key={index}>
@@ -80,16 +82,16 @@ const Footer: React.FC = () => {
                     </span>
                     {Array.isArray(item.name) && Array.isArray(item.path) ? (
                       item.name.map((subName, subIndex) => (
-                        <>
+                        <span key={subIndex}>
                           <Link
                             href={item.path[subIndex]}
-                            key={subIndex}
+                            // key={subIndex}
                             className="hover:text-primary transition duration-300 ease-in-out"
                           >
                             {subName}
                           </Link>
                           {subIndex !== item.name.length - 1 && ","}
-                        </>
+                        </span>
                       ))
                     ) : (
                       <Link
@@ -115,20 +117,18 @@ const Footer: React.FC = () => {
                 <span className="sr-only">copyright</span>
                 <CopyRight />
               </span>{" "}
-              {new Date().getFullYear()} Oak Climbing Resort
+              {year} Oak Climbing Resort
+            </p>
+            <p className="text-center capitalize gap-2 flex items-center justify-center">
+              <li>All rights reserved.</li>
             </p>
             <p className="text-center capitalize gap-2 flex items-center justify-center">
               <li>
-                All rights reserved.
-              </li>
-            </p>
-            <p className="text-center capitalize gap-2 flex items-center justify-center">
-              <li>
-                Designed & Developed by{" "}<span className="font-semibold">Eazotel</span>
+                Designed & Developed by{" "}
+                <span className="font-semibold">Eazotel</span>
               </li>
             </p>
           </div>
-
         </Container>
       </section>
     </footer>

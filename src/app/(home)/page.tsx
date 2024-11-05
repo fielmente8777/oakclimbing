@@ -1,5 +1,11 @@
-import { SectionHeading, Section, Container, Banner } from "@/components";
-import { Aboutus, Accommodation, Nearby } from "./components";
+import {
+  SectionHeading,
+  Section,
+  Container,
+  Banner,
+  Testimonial,
+} from "@/components";
+import { Aboutus, Accommodation, Nearby, ResortHighlights } from "./components";
 
 const page = () => {
   return (
@@ -18,7 +24,9 @@ const page = () => {
       </Section>
       <Aboutus />
       <Accommodation />
+      <ResortHighlights />
       <Nearby />
+      <Testimonial />
     </main>
   );
 };

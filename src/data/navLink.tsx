@@ -32,7 +32,7 @@ export const navLink = [
 export const contactLink = [
   {
     icon: <FaLocationDot />,
-    name: "Guniyalekh- Mukteshwar, Nainital",
+    name: "Guniyalekh - Mukteshwar, Nainital",
     path: "https://goo.gl/maps/8Hr5H5V5kP1E3z3X6",
   },
   {

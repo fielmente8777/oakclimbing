@@ -7,11 +7,22 @@ import Button from "./Button";
 import { usePathname } from "next/navigation";
 import { IoIosMenu } from "react-icons/io";
 import { IoIosClose } from "react-icons/io";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const NavBar: React.FC = () => {
   const pathName = usePathname();
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [open]);
   return (
     <header>
       <nav className="flex flex-col max-w-[1590px] mx-auto ">
@@ -79,7 +90,7 @@ const NavBar: React.FC = () => {
           </div>
           <div className="block lg:hidden">
             <button
-              className={`flex items-center text-5xl cursor-pointer justify-center text-primary duration-300 ease-in-out transition ${open ? "rotate-90" : ""}`}
+              className={`flex items-center text-4xl cursor-pointer justify-center text-primary duration-300 ease-in-out transition ${open ? "rotate-90" : ""}`}
             >
               {!open ? (
                 <IoIosMenu
@@ -96,7 +107,7 @@ const NavBar: React.FC = () => {
           </div>
         </div>
       </nav>
-      {open && <MobileNav open={open} />}
+      {open && <MobileNav open={open} setOpen={setOpen} />}
     </header>
   );
 };
@@ -105,22 +116,26 @@ export default NavBar;
 
 interface mobileNavProps {
   open: boolean;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export const MobileNav: React.FC<mobileNavProps> = ({ open }) => {
+export const MobileNav: React.FC<mobileNavProps> = ({ open, setOpen }) => {
   const pathName = usePathname();
   return (
     <div
-      className={`absolute top-32 transition-all duration-300 ease-in-out w-full z-10 h-full bg-bgLight ${open ? "left-0" : "left-[-100%]"}`}
+      className={`absolute top-32  transition-all duration-300 ease-in-out w-full z-30 h-full bg-bgLight ${open ? "left-0" : "left-[-100%]"}`}
     >
-      <ul className="flex flex-col gap-4 items-start py-10">
+      <ul className="flex flex-col gap-2 items-start py-8">
         {navLink.map((item, index) => (
           <li key={index} className="px-1 w-full">
             <Link
               href={item.path}
-              className={`px-5 py-3 montserrat group w-full uppercase transition duration-300 ease-in-out text-base font-medium ${
-                pathName === item.path ? "text-primary border-l-4 border-primary" : "text-dark"
+              className={`px-5 py-3 montserrat group w-full block uppercase transition duration-300 ease-in-out text-base font-medium ${
+                pathName === item.path
+                  ? "text-primary border-l-4 border-primary bg-white"
+                  : "text-dark"
               }`}
+              onClick={() => setOpen(false)}
             >
               {item.name}
             </Link>
