@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
     <footer className="max-w-[1590px] mx-auto source-code-pro footer">
       <section className="bg-secondary py-20 text-white">
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-[2.2rem]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-[2.2rem] gap-5">
             {/* logo */}
             <div className="flex flex-col gap-4">
               <Link

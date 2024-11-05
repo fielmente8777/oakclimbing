@@ -12,7 +12,7 @@ const Aboutus = () => {
       <Section className="bg-bgLight" lgPy="py-20">
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="grid grid-cols-2 auto-rows-[17.5rem] grid-flow-row">
+            <div className="grid grid-cols-2 auto-rows-[12rem] grid-flow-row">
               {[1, 2, 3].map((src, index) => (
                 <div
                   key={index}
