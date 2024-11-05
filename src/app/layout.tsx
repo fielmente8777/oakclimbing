@@ -3,14 +3,75 @@ import localFont from "next/font/local";
 import "./globals.scss";
 import { Call, Footer, NavBar, Whatsapp } from "@/components";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
+const sourceSansProRegular = localFont({
+  src: "./fonts/SourceSansPro-Regular.woff",
+  variable: "--font-source-sans-pro",
   weight: "100 900",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
+
+const sourceSansProItalic = localFont({
+  src: "./fonts/SourceSansPro-It.woff",
+  variable: "--font-source-sans-pro-italic",
+  weight: "100 900",
+});
+
+const sourceSansProExtraLight = localFont({
+  src: "./fonts/SourceSansPro-ExtraLight.woff",
+  variable: "--font-source-sans-pro-extra-light",
+  weight: "100 900",
+});
+
+const sourceSansProExtraLightItalic = localFont({
+  src: "./fonts/SourceSansPro-ExtraLightIt.woff",
+  variable: "--font-source-sans-pro-extra-light-italic",
+  weight: "100 900",
+});
+
+const sourceSansProLight = localFont({
+  src: "./fonts/SourceSansPro-Light.woff",
+  variable: "--font-source-sans-pro-light",
+  weight: "100 900",
+});
+
+const sourceSansProLightItalic = localFont({
+  src: "./fonts/SourceSansPro-LightIt.woff",
+  variable: "--font-source-sans-pro-light-italic",
+  weight: "100 900",
+});
+
+const sourceSansProSemiBold = localFont({
+  src: "./fonts/SourceSansPro-Semibold.woff",
+  variable: "--font-source-sans-pro-semi-bold",
+  weight: "100 900",
+});
+
+const sourceSansProSemiBoldItalic = localFont({
+  src: "./fonts/SourceSansPro-SemiboldIt.woff",
+  variable: "--font-source-sans-pro-semi-bold-italic",
+  weight: "100 900",
+});
+
+const sourceSansProBold = localFont({
+  src: "./fonts/SourceSansPro-Bold.woff",
+  variable: "--font-source-sans-pro-bold",
+  weight: "100 900",
+});
+
+const sourceSansProBoldItalic = localFont({
+  src: "./fonts/SourceSansPro-BoldIt.woff",
+  variable: "--font-source-sans-pro-bold-italic",
+  weight: "100 900",
+});
+
+const sourceSansProBlack = localFont({
+  src: "./fonts/SourceSansPro-Black.woff",
+  variable: "--font-source-sans-pro-black",
+  weight: "100 900",
+});
+
+const sourceSansProBlackItalic = localFont({
+  src: "./fonts/SourceSansPro-BlackIt.woff",
+  variable: "--font-source-sans-pro-black-italic",
   weight: "100 900",
 });
 
@@ -27,7 +88,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${sourceSansProRegular.variable} ${sourceSansProBlack.variable} ${sourceSansProBold.variable} ${sourceSansProSemiBold.variable} ${sourceSansProLight.variable} ${sourceSansProExtraLight.variable} ${sourceSansProItalic.variable} ${sourceSansProExtraLightItalic.variable} ${sourceSansProLightItalic.variable} ${sourceSansProSemiBoldItalic.variable} ${sourceSansProBoldItalic.variable} ${sourceSansProBlackItalic.variable} antialiased`}
+        suppressHydrationWarning={true}
       >
         <NavBar />
         {children}

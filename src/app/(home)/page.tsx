@@ -1,9 +1,26 @@
+import { SectionHeading, Section, Container, Banner } from "@/components";
+import { Aboutus, Accommodation, Nearby } from "./components";
+
 const page = () => {
-    return (
-        <main className="flex min-h-[60vh] flex-col items-center justify-between p-24">
-            Enter
-        </main>
-    );
-}
+  return (
+    <main>
+      <Banner />
+      <Section>
+        <Container>
+          <SectionHeading
+            className="lg:max-w-3xl lg:mx-auto text-center"
+            h1
+            span="Welcome to"
+            title="Oak Climbing Resort"
+            description="Explore the Untouched Paradise In The Lap Of Himalayas At Oak Climbing Resort."
+          />
+        </Container>
+      </Section>
+      <Aboutus />
+      <Accommodation />
+      <Nearby />
+    </main>
+  );
+};
 
 export default page;

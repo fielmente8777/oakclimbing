@@ -7,4 +7,8 @@ import LazyLoadedMap from './LazyLoadedMap';
 import SliderSwip from './SliderSwip';
 import NavBar from './NavBar';
 import Footer from './Footer';
-export { Section, Container, NavBar, Footer, Call, Whatsapp, EmbeddedMap, LazyLoadedMap, SliderSwip }
+import SectionHeading from './SectionHeading';
+import Banner from './Banner';
+import Button from './Button';
+
+export { Banner, Button, Section, SectionHeading, Container, NavBar, Footer, Call, Whatsapp, EmbeddedMap, LazyLoadedMap, SliderSwip }

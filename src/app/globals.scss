@@ -12,10 +12,37 @@
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
 }
-.source-code-pro {
-  font-family: "Source Code Pro", serif;
-  font-optical-sizing: auto;
-}
+
+/* Define custom font variables */
+// :root {
+//   --font-source-sans-pro: var(--font-source-sans-pro);
+//   --font-source-sans-pro-bold: var(--font-source-sans-pro-bold);
+//   --font-source-sans-pro-semi-bold: var(--font-source-sans-pro-semi-bold);
+//   --font-source-sans-pro-light: var(--font-source-sans-pro-light);
+//   --font-source-sans-pro-extra-light: var(--font-source-sans-pro-extra-light);
+//   --font-source-sans-pro-italic: var(--font-source-sans-pro-italic);
+//   --font-source-sans-pro-extra-light-italic: var(--font-source-sans-pro-extra-light-italic);
+//   --font-source-sans-pro-light-italic: var(--font-source-sans-pro-light-italic);
+//   --font-source-sans-pro-semi-bold-italic: var(--font-source-sans-pro-semi-bold-italic);
+//   --font-source-sans-pro-bold-italic: var(--font-source-sans-pro-bold-italic);
+//   --font-source-sans-pro-black: var(--font-source-sans-pro-black);
+//   --font-source-sans-pro-black-italic: var(--font-source-sans-pro-black-italic);
+// }
+
+// // /* Apply the regular font style to the entire document */
+// body {
+//   font-family: var(--font-source-sans-pro), sans-serif;
+// }
+
+// /* Example classes for different font styles */
+// .font-bold {
+//   font-family: var(--font-source-sans-pro-bold), sans-serif;
+// }
+
+// .font-italic {
+//   font-family: var(--font-source-sans-pro-italic), sans-serif;
+// }
+
 
 * {
   margin: 0;
@@ -38,7 +65,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .max-Width {
@@ -63,17 +90,36 @@ body {
   ul {
     li {
       a {
-        font-size: 1rem;
+        font-size: 0.92rem;
         font-style: normal;
         font-weight: 400;
         line-height: 1.5rem;
       }
     }
   }
-  p{
-    font-size: 1rem;
+  p {
+    font-size: 0.8rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5rem;
+  }
+}
+
+.nearby-pagination{
+  .swiper-pagination-bullet {
+    background-color: #017a3a;
+    block-size: 1rem;
+    inline-size: 1rem;
+    aspect-ratio: 1 / 1;
+    opacity: 0.2;
+    border-radius: 50%;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #017a3a;
+    // block-size: 1rem;
+    // aspect-ratio: 1 / 1;
+    opacity: 1;
+    border-radius: 0.5rem;
   }
 }

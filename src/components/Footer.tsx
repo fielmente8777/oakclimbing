@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
     <footer className="max-w-[1590px] mx-auto source-code-pro footer">
       <section className="bg-secondary py-20 text-white">
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-[2rem]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-[2.2rem]">
             {/* logo */}
             <div className="flex flex-col gap-4">
               <Link
@@ -18,15 +18,13 @@ const Footer: React.FC = () => {
                 className="relative h-20 aspect-[4/1] flex items-center justify-center"
               >
                 <Image
-                  src="/images/logo.png"
+                  src="/images/logo2.png"
                   alt="logo"
                   fill
                   className="w-20 h-20"
                 />
               </Link>
-              <p className="">
-                Untouched Paradise In The Lap Of Himalayas
-              </p>
+              <p className="text-center">Untouched Paradise In The Lap Of Himalayas</p>
             </div>
             {/* quick links */}
             <div className="flex flex-col gap-4 lg:ms-8">
@@ -82,13 +80,16 @@ const Footer: React.FC = () => {
                     </span>
                     {Array.isArray(item.name) && Array.isArray(item.path) ? (
                       item.name.map((subName, subIndex) => (
-                        <Link
-                          href={item.path[subIndex]}
-                          key={subIndex}
-                          className="hover:text-primary transition duration-300 ease-in-out"
-                        >
-                          {subName}
-                        </Link>
+                        <>
+                          <Link
+                            href={item.path[subIndex]}
+                            key={subIndex}
+                            className="hover:text-primary transition duration-300 ease-in-out"
+                          >
+                            {subName}
+                          </Link>
+                          {subIndex !== item.name.length - 1 && ","}
+                        </>
                       ))
                     ) : (
                       <Link

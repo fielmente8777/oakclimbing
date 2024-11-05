@@ -30,7 +30,7 @@ const NavBar: React.FC = () => {
             </div>
           </Container>
         </div>
-        <div className="flex py-4 w-full justify-between items-center max-w-[1485px] xxl:ms-9 ms-0">
+        <div className="flex py-4 w-full justify-between items-center max-w-[1465px] xxl:ms-9 ms-0">
           <div className="flex items-center">
             <Link
               href="/"
