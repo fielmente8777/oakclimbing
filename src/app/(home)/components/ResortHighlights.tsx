@@ -65,7 +65,7 @@ const ResortHighlights: React.FC = () => {
             centeredSlides={true}
             loop={true}
             slidesPerView={"auto"}
-            sliderGap={30}
+            slidergap={30}
             coverflowEffect={{
               rotate: 0,
               stretch: 30,
@@ -79,7 +79,6 @@ const ResortHighlights: React.FC = () => {
               pauseOnMouseEnter: true,
               waitForTransition: true,
             }}
-            loopFillGroupWithBlank={true}
             speed={1000}
             modules={[EffectCoverflow, Autoplay]}
             breakpoints={{

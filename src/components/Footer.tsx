@@ -96,6 +96,8 @@ const Footer: React.FC = () => {
                     ) : (
                       <Link
                         href={item.path as string}
+                        target="_blank"
+                        rel="noreferrer"
                         className="hover:text-primary transition duration-300 ease-in-out"
                       >
                         {item.name}
@@ -119,14 +121,19 @@ const Footer: React.FC = () => {
               </span>{" "}
               {year} Oak Climbing Resort
             </p>
-            <p className="text-center capitalize gap-2 flex items-center justify-center">
-              <li>All rights reserved.</li>
+            <p className="text-center capitalize gap-3 flex items-center justify-center">
+              <span>•</span> All rights reserved.
             </p>
-            <p className="text-center capitalize gap-2 flex items-center justify-center">
-              <li>
-                Designed & Developed by{" "}
-                <span className="font-semibold">Eazotel</span>
-              </li>
+            <p className="text-center capitalize gap-3 flex items-center justify-center">
+              <span>•</span> Designed & Developed by{" "}
+              <Link
+                href="https://www.eazotel.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="font-semibold"
+              >
+                Eazotel
+              </Link>
             </p>
           </div>
         </Container>

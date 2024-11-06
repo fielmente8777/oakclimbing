@@ -77,7 +77,7 @@ const Grid = () => {
           <SliderSwip
             data={data}
             classNameSwiper="gallerySwiper"
-            slidePerView={1}
+            slideperview={1}
             spacebetween={10}
             modules={[Navigation]}
             navigation={true}

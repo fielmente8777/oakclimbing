@@ -32,16 +32,16 @@ const page = () => {
                     </span>
                     {Array.isArray(item.name) && Array.isArray(item.path) ? (
                       item.name.map((subName, subIndex) => (
-                        <>
+                        <span key={subIndex}>
                           <Link
                             href={item.path[subIndex]}
-                            key={subIndex}
+                            // key={subIndex}
                             className="hover:text-primary transition duration-300 ease-in-out"
                           >
                             {subName}
                           </Link>
                           {subIndex !== item.name.length - 1 && ","}
-                        </>
+                        </span>
                       ))
                     ) : (
                       <Link

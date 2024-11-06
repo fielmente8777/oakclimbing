@@ -35,6 +35,8 @@ const NavBar: React.FC = () => {
                   <li key={index}>
                     <Link
                       href={item.path}
+                      target={item.label === "Address" ? "_blank" : "_self"}
+                      rel="noreferrer"
                       className="hover:scale-105 hover:text-primary transition duration-300 ease-in-out text-base flex items-center justify-center gap-1 text-white"
                     >
                       <span aria-label={item.name}>{item.icon}</span>

@@ -54,7 +54,6 @@ const Nearby = () => {
               stopOnLastSlide: true,
             }}
             loop
-            loopFillGroupWithBlank={true}
             pagination={{
               clickable: true,
               type: "bullets",

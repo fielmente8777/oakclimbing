@@ -15,6 +15,7 @@ const Testimonial: React.FC = () => {
           <div className="w-full flex items-center justify-center gap-4 mt-8">
             <button className="hover:scale-110 active:scale-100 transition duration-300 ease-in-out rounded-lg btn-prev">
               <BtnPrev />
+              <span className="sr-only">Previous</span>
             </button>
             <SliderSwip
               data={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
@@ -41,6 +42,7 @@ const Testimonial: React.FC = () => {
 
             <button className="hover:scale-110 active:scale-100 transition duration-300 ease-in-out rounded-lg btn-next">
               <BtnNext />
+              <span className="sr-only">Next</span>
             </button>
           </div>
         </div>
