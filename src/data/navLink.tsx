@@ -12,7 +12,7 @@ export const navLink = [
     path: "/about-us/",
   },
   {
-    name: "Accomodation",
+    name: "Accommodation",
     path: "/rooms/",
   },
   {
@@ -20,8 +20,8 @@ export const navLink = [
     path: "/gallery/",
   },
   {
-    name: "Blog",
-    path: "/blog/",
+    name: "Blogs",
+    path: "/blogs/",
   },
   {
     name: "Contact us",

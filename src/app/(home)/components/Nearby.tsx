@@ -14,26 +14,32 @@ const Nearby = () => {
     {
       image: "/images/Kainchi-Dham.webp",
       title: "Kainchi Dham",
+      blog: false,
     },
     {
       image: "/images/Boating.webp",
       title: "Boating in Bhimtal & Naukuchital",
+      blog: false,
     },
     {
       image: "/images/Paragliding.webp",
       title: "Paragliding",
+      blog: false,
     },
     {
       image: "/images/Bhalu-Waterfall.webp",
       title: "Bhalu Gaad Waterfall",
+      blog: false,
     },
     {
       image: "/images/IVRI-Forest.webp",
       title: "IVRI Forest",
+      blog: false,
     },
     {
       image: "/images/Starscapes-Observatory.webp",
       title: "Starscapes Observatory",
+      blog: false,
     },
   ];
   return (

@@ -9,7 +9,7 @@ const PageTopBanner: React.FC<props> = ({ title, para }) => {
       <h1 className="lg:text-[2.5rem]/none playfair-display text-4xl capitalize font-bold text-primary">
         {title}
       </h1>
-      <p className="text-normal font-medium text-[17px] text-center max-w-[1300px] mx-auto px-[1.2rem] md:px-0">
+      <p className="text-normal font-medium text-sm lg:text-lg text-center max-w-[1300px] mx-auto px-[1.2rem] md:px-0">
         {para}
       </p>
     </div>

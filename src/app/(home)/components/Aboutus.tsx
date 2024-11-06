@@ -48,7 +48,7 @@ const Aboutus = () => {
               <h2 className="text-3xl font-semibold playfair-display text-dark">
                 {data.title} <span className="text-primary">{data.span}</span>
               </h2>
-              <p className="text-secondary text-lg">{data.description}</p>
+              <p className="text-normal text-lg">{data.description}</p>
               <Button href={data.href}>{data.label}</Button>
             </div>
           </div>

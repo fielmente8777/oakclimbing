@@ -11,7 +11,7 @@ const Banner = () => {
   ]
   return (
     <section>
-      <div className="pb-[9rem] bg-bgLight max-w-[1590px] w-full mx-auto">
+      <div className="lg:pb-[9rem] bg-bgLight max-w-[1590px] w-full mx-auto">
         <PageTopBanner
           title={"About Us"}
           para={
@@ -20,7 +20,7 @@ const Banner = () => {
         />
       </div>
 
-      <Section className="-mt-[12rem]">
+      <Section className="lg:-mt-[12rem] -mt-12">
         <Container>
           <div className="flex flex-col gap-20">
             <div className="grid grid-cols-4 gap-5 ">

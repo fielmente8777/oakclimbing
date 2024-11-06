@@ -28,7 +28,7 @@ const page = () => {
           <SectionHeading title={data.title} />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-8">
             {data.description.map((para, index) => (
-              <p className="text-base font-normal text-normal" key={index}>
+              <p className="text-sm lg:text-lg font-normal text-normal" key={index}>
                 {para}
               </p>
             ))}
@@ -37,7 +37,7 @@ const page = () => {
       </Section>
       <WhyChooseUs />
       <Section>
-        <div className="w-full relative aspect-[4/2] md:aspect-[4/1.5]">
+        <div className="w-full relative aspect-[4/2.5] md:aspect-[4/1.5]">
           <Image
             src="/images/discover.webp"
             alt="alt"

@@ -10,9 +10,9 @@ const Footer: React.FC = () => {
   const year = new Date().getFullYear();
   return (
     <footer className="max-w-[1590px] mx-auto source-code-pro footer">
-      <section className="bg-secondary py-20 text-white">
+      <section className="bg-secondary lg:py-20 py-8 text-white">
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-[2.2rem] tracking-wide">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-[2.2rem] gap-4 tracking-wide">
             {/* logo */}
             <div className="flex flex-col gap-4">
               <Link
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
                       href={item.path}
                       className="font-medium hover:scale-105 hover:text-primary transition duration-300 ease-in-out"
                     >
-                      {item.name}
+                      {item.name === "Accommodation" ? "Suits & Rooms" : item.name}
                     </Link>
                   </li>
                 ))}
@@ -113,7 +113,7 @@ const Footer: React.FC = () => {
 
       <section className="bg-primary py-3 text-white tracking-wide">
         <Container>
-          <div className="flex flex-wrap gap-5 justify-center">
+          <div className="flex flex-wrap lg:gap-5 gap-2 justify-center">
             <p className="text-center capitalize gap-1 flex items-center justify-center">
               <span>
                 <span className="sr-only">copyright</span>

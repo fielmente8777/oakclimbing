@@ -4,11 +4,11 @@ import { contactLink } from "@/data/footerLink";
 import { Metadata } from "next";
 import Link from "next/link";
 
-
-
 export const metadata: Metadata = {
-  title: "Contact Us - Oak Climbing Resort | Plan Your Adventure in Uttarakhand",
-  description: "Get in touch with Oak Climbing Resort in Uttarakhand. Whether you have questions about our accommodations, climbing facilities, or bookings, we’re here to help. Reach out to plan your next adventure in the Himalayas",
+  title:
+    "Contact Us - Oak Climbing Resort | Plan Your Adventure in Uttarakhand",
+  description:
+    "Get in touch with Oak Climbing Resort in Uttarakhand. Whether you have questions about our accommodations, climbing facilities, or bookings, we’re here to help. Reach out to plan your next adventure in the Himalayas",
 };
 const page = () => {
   return (
@@ -53,6 +53,8 @@ const page = () => {
                     ) : (
                       <Link
                         href={item.path as string}
+                        target="_blank"
+                        rel="noreferrer"
                         className="hover:text-primary transition duration-300 ease-in-out"
                       >
                         {item.name}

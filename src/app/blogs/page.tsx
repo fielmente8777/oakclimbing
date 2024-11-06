@@ -1,6 +1,5 @@
 import { Card, Container } from "@/components";
 import PageTopBanner from "@/components/PageTopBanner";
-import BlogImage from "../../../public/images/room.webp";
 import { Metadata } from "next";
 
 
@@ -18,21 +17,21 @@ const page = () => {
     {
       "id": 1,
       "blog": true,
-      "image": BlogImage,
+      "image": "/images/outside20.webp",
       "title": "Best night photo at lakecious",
 
     },
     {
       "id": 1,
       "blog": true,
-      "image": BlogImage,
+      "image": "/images/outside21.webp",
       "title": "Top 5 Reasons Why to Visit Oak Climbing Resort – Luxury Hotel/Resort near Bhimtal",
 
     },
     {
       "id": 1,
       "blog": true,
-      "image": BlogImage,
+      "image": "/images/outside15.webp",
       "title": "Best night photo at lakecious",
 
     }

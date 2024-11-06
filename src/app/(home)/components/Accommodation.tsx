@@ -27,7 +27,7 @@ const Accommodation = () => {
       <Container>
         <SectionHeading title="Accommodation" className="lg:pb-10" />
       </Container>
-      <section className="bg-bgLight">
+      <section>
         <Container>
           <div className="space-y-10 mt-10">
             {roomDatas.map((roomData, index) => (

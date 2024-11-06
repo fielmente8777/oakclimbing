@@ -8,21 +8,21 @@ import 'swiper/css/effect-coverflow';
 
 import React, { ReactNode } from "react";
 
-interface Props {
-  children: (item: any) => ReactNode;
+interface Props<T> {
+  children: (item: T) => ReactNode;
   classNameSwiper?: string;
   classNameSwiperSlide?: string;
-  data: any[];
-  [key: string]: any; // for any additional props
+  data: T[];
+  [key: string]: unknown;
 }
 
-const SliderSwip: React.FC<Props> = ({
+const SliderSwip = <T,>({
   children,
   classNameSwiper = "",
   classNameSwiperSlide = "",
   data,
   ...props
-}) => {
+}: Props<T>) => {
   return (
     <Swiper {...props} className={`${classNameSwiper} mySwiper`}>
       {data.map((item, index) => (

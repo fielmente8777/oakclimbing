@@ -130,8 +130,8 @@ body {
 .nearby-pagination {
   .swiper-pagination-bullet {
     background-color: #017a3a;
-    block-size: .7rem;
-    inline-size: .7rem;
+    block-size: 0.7rem;
+    inline-size: 0.7rem;
     aspect-ratio: 1 / 1;
     opacity: 0.2;
     border-radius: 50%;
@@ -146,8 +146,8 @@ body {
   }
 }
 
-.gallerySwiper {
-
+.gallerySwiper,
+.chooseUs {
   .swiper-button-prev,
   .swiper-button-next {
     color: #017a3a;
@@ -156,11 +156,18 @@ body {
     background-color: #fcf9f2;
     padding: 0.5rem;
     border-radius: 50%;
-
+    border: 1px solid #017a3a;
     &::after {
       color: #017a3a;
       font-size: 1.5rem;
+      font-weight: 600;
     }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .swiper-button-disabled {
+    display: none;
   }
 }
 
