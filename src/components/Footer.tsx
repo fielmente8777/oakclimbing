@@ -26,9 +26,9 @@ const Footer: React.FC = () => {
                   className="w-20 h-20"
                 />
               </Link>
-              <p className="text-center">
+              <Link href={"/"} className="text-center text-[15px] font-medium hover:scale-105 hover:text-primary transition duration-300 ease-in-out">
                 Untouched Paradise In The Lap Of Himalayas
-              </p>
+              </Link>
             </div>
             {/* quick links */}
             <div className="flex flex-col gap-4 lg:ms-8">

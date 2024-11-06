@@ -28,7 +28,7 @@ const page = () => {
           <SectionHeading title={data.title} />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-8">
             {data.description.map((para, index) => (
-              <p className="text-sm lg:text-lg font-normal text-normal" key={index}>
+              <p className="text-sm lg:text-[16px] font-normal text-normal" key={index}>
                 {para}
               </p>
             ))}

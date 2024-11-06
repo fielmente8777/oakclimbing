@@ -30,16 +30,15 @@ const Aboutus = () => {
               {data.image.map((src, index) => (
                 <div
                   key={index}
-                  className={`${
-                    gridPattern[index % gridPattern.length]
-                  } overflow-hidden  hover:shadow-3xl duration-1000 transition ease-in-out relative aspect-auto`}
+                  className={`${gridPattern[index % gridPattern.length]
+                    } overflow-hidden  hover:shadow-3xl duration-1000 transition ease-in-out relative aspect-auto`}
                 >
                   <Image
                     src={src}
                     alt="view"
                     priority={true}
                     fill
-                    className={`w-full h-full object-resize hover:scale-110 duration-1000 transition ease-linear`}
+                    className={`w-full h-full object-cover lg:object-resize hover:scale-110 duration-1000 transition ease-linear`}
                   />
                 </div>
               ))}
@@ -48,7 +47,7 @@ const Aboutus = () => {
               <h2 className="text-3xl font-semibold playfair-display text-dark">
                 {data.title} <span className="text-primary">{data.span}</span>
               </h2>
-              <p className="text-normal text-lg">{data.description}</p>
+              <p className="text-normal text-[16px]">{data.description}</p>
               <Button href={data.href}>{data.label}</Button>
             </div>
           </div>

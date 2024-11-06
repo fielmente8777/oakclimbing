@@ -30,7 +30,7 @@ const SectionHeading: React.FC<Props> = ({
       )}
       {description && (
         <p
-          className={` font-normal lg:text-lg text-base ${color ? color : "text-secondary"}`}
+          className={` font-normal lg:text-[16px] text-base ${color ? color : "text-normal"}`}
         >
           {description}
         </p>
