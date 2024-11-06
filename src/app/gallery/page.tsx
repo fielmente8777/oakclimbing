@@ -1,6 +1,14 @@
-import { Button} from "@/components";
+import { Button } from "@/components";
 import Grid from "./Grid";
 import PageTopBanner from "@/components/PageTopBanner";
+import { Metadata } from "next";
+
+
+
+export const metadata: Metadata = {
+  title: "Gallery - Oak Climbing Resort | Explore the Beauty of Uttarakhand",
+  description: "Browse the Oak Climbing Resort gallery and experience the beauty of Uttarakhand. See breathtaking views, thrilling climbing spots, cozy accommodations, and snapshots of unforgettable moments. Discover why our guests love staying in the heart of the Himalayas",
+};
 
 const page = () => {
   return (

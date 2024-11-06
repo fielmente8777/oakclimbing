@@ -114,18 +114,18 @@ const Footer: React.FC = () => {
       <section className="bg-primary py-3 text-white tracking-wide">
         <Container>
           <div className="flex flex-wrap gap-5 justify-center">
-            <p className="text-center capitalize gap-2 flex items-center justify-center">
+            <p className="text-center capitalize gap-1 flex items-center justify-center">
               <span>
                 <span className="sr-only">copyright</span>
                 <CopyRight />
               </span>{" "}
               {year} Oak Climbing Resort
             </p>
-            <p className="text-center capitalize gap-3 flex items-center justify-center">
-              <span>•</span> All rights reserved.
+            <p className="text-center capitalize gap-1 flex items-center justify-center">
+              <span>•</span> All rights reserved
             </p>
-            <p className="text-center capitalize gap-3 flex items-center justify-center">
-              <span>•</span> Designed & Developed by{" "}
+            <p className="text-center capitalize gap-1 flex items-center justify-center">
+              <span>•</span> Designed & Developed by
               <Link
                 href="https://www.eazotel.com/"
                 target="_blank"

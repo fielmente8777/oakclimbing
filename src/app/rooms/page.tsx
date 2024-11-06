@@ -3,6 +3,16 @@ import RoomsCard from "./components/RoomsCard";
 import RoomImage from "../../../public/images/room.webp";
 import PageTopBanner from "@/components/PageTopBanner";
 import Amenities from "./components/Amenities";
+import { Metadata } from "next";
+
+
+
+
+export const metadata: Metadata = {
+  title: "Rooms & Suites - Oak Climbing Resort | Stay in Comfort in Uttarakhand",
+  description: "Find your ideal stay at Oak Climbing Resort in Uttarakhand. Our comfortable, well-appointed rooms offer the perfect retreat after a day of adventure. Explore our accommodations for couples, families, and solo travelers, all set against the serene backdrop of the Himalayas",
+};
+
 
 const page = () => {
   const roomDatas = [

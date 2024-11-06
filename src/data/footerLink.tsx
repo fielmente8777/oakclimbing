@@ -12,7 +12,7 @@ export const contactLink: contactLink[] = [
   {
     icon: <FaLocationDot />,
     name: "Oak climbing resort Guniyalekh, Mukteshwar,Uttrakhand",
-    path: "https://goo.gl/maps/8Hr5H5V5kP1E3z3X6",
+    path: "https://maps.app.goo.gl/gJLfMAvjZVY7qeMc9",
   },
   {
     icon: <IoCall />,

@@ -19,9 +19,9 @@ const RoomsCard: React.FC<roomCardType> = ({ roomData }) => {
       <div
         className={`flex flex-col flex-grow gap-5 lg:px-10 px-5 justify-center bg-[#FCF9F2] ${roomData.id % 2 === 0 ? "order-1" : "order-2"}`}
       >
-        <h1 className="text-[28px] playfair-display font-medium">
+        <h3 className="text-[28px] playfair-display font-medium">
           {roomData.name}
-        </h1>
+        </h3>
         <p className="text-[16px] text-normal">{roomData.description}</p>
         <div className="py-3">
           <Button href={roomData.linkUrl}>{roomData.linkName}</Button>

@@ -1,6 +1,14 @@
 import { Button, Container, Section, SectionHeading } from "@/components";
 import { Banner, WhyChooseUs } from "./components";
 import Image from "next/image";
+import { Metadata } from "next";
+
+
+
+export const metadata: Metadata = {
+  title: "About Us - Oak Climbing Resort | Adventure Awaits in Uttarakhand",
+  description: "Discover Oak Climbing Resort in Uttarakhand, where passion for adventure meets the beauty of the Himalayas. Learn about our commitment to providing an unforgettable experience with premier rock climbing, scenic landscapes, and warm hospitality. Perfect for adventure lovers and nature enthusiasts alike",
+};
 
 const page = () => {
   const data = {
@@ -29,7 +37,7 @@ const page = () => {
       </Section>
       <WhyChooseUs />
       <Section>
-        <div className="w-full relative aspect-[4/1.5]">
+        <div className="w-full relative aspect-[4/2] md:aspect-[4/1.5]">
           <Image
             src="/images/discover.webp"
             alt="alt"

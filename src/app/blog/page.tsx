@@ -1,6 +1,16 @@
 import { Card, Container } from "@/components";
 import PageTopBanner from "@/components/PageTopBanner";
 import BlogImage from "../../../public/images/room.webp";
+import { Metadata } from "next";
+
+
+
+
+
+export const metadata: Metadata = {
+  title: "Blog - Oak Climbing Resort | Tips, Guides & Stories from Uttarakhand",
+  description: "Dive into the Oak Climbing Resort blog for tips, guides, and stories on adventure travel, climbing, and exploring Uttarakhand. Stay updated on the latest resort news, events, and local attractions to make the most of your stay in the Himalayas",
+};
 
 const page = () => {
 

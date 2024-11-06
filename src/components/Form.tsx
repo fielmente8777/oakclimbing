@@ -164,8 +164,8 @@ const Form: React.FC = () => {
       className="flex flex-col h-full gap-4 bg-[#1F242E] text-white max-md:px-4 p-6 max-md:mt-6 text-base rounded-lg w-full"
       id="contact"
     >
-      <h3 className="text-xl playfair-display  lg:text-[2rem]/[2.5rem] font-normal text-black-primary">
-        Contact form
+      <h3 className="text-xl playfair-display capitalize  lg:text-[2rem]/[2.5rem] font-normal text-black-primary">
+        Get in touch
       </h3>
 
       {formData.map((data, index) => (
@@ -180,19 +180,19 @@ const Form: React.FC = () => {
             {data.tag === "div"
               ? data.content
               : React.createElement(data.tag, {
-                  id: data.name,
-                  type: data.type,
-                  name: data.name,
-                  value: data.value,
-                  onChange: data.onChange,
-                  placeholder: data.placeholder,
-                  required: data.required,
-                  autoComplete: "off",
-                  spellCheck: "false",
-                  rows: "5",
-                  className:
-                    "w-full bg-transparent no-spinner resize-none placeholder:text-white focus:outline-none valid:outline-blue-primary invalid:outline-Saffron-primary",
-                })}
+                id: data.name,
+                type: data.type,
+                name: data.name,
+                value: data.value,
+                onChange: data.onChange,
+                placeholder: data.placeholder,
+                required: data.required,
+                autoComplete: "off",
+                spellCheck: "false",
+                rows: "5",
+                className:
+                  "w-full bg-transparent no-spinner resize-none placeholder:text-white focus:outline-none valid:outline-blue-primary invalid:outline-Saffron-primary",
+              })}
           </div>
           {data.name === "phone" && errorMessage && (
             <p className="text-sm text-red-500 mt-2">{errorMessage}</p>

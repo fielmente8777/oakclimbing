@@ -13,10 +13,12 @@
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
 }
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+
   .no-spinner::-webkit-outer-spin-button,
   .no-spinner::-webkit-inner-spin-button {
     @apply appearance-none;
@@ -128,8 +130,8 @@ body {
 .nearby-pagination {
   .swiper-pagination-bullet {
     background-color: #017a3a;
-    block-size: 1rem;
-    inline-size: 1rem;
+    block-size: .7rem;
+    inline-size: .7rem;
     aspect-ratio: 1 / 1;
     opacity: 0.2;
     border-radius: 50%;
@@ -145,6 +147,7 @@ body {
 }
 
 .gallerySwiper {
+
   .swiper-button-prev,
   .swiper-button-next {
     color: #017a3a;
@@ -153,6 +156,7 @@ body {
     background-color: #fcf9f2;
     padding: 0.5rem;
     border-radius: 50%;
+
     &::after {
       color: #017a3a;
       font-size: 1.5rem;
@@ -164,6 +168,7 @@ body {
   filter: blur(5px);
   transition: all;
   transition-duration: 1000ms;
+
   h3 {
     opacity: 0;
   }

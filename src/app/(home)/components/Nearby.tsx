@@ -71,7 +71,7 @@ const Nearby = () => {
             {(item) => <Card data={item} />}
           </SliderSwip>
 
-          <div className="nearby-pagination w-full flex justify-center gap-2 cursor-pointer items-center lg:mt-10 mt-4 mb-4"></div>
+          <div className="nearby-pagination w-full flex justify-center gap-1 cursor-pointer items-center lg:mt-10 mt-4 mb-4"></div>
         </Container>
       </Section>
       <div className="flex justify-center pt-10">

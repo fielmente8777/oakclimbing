@@ -1,8 +1,8 @@
 export const CopyRight = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
+    width="20"
+    height="20"
     viewBox="0 0 24 24"
     fill="none"
   >
@@ -308,8 +308,8 @@ export const HimalayanViewPoint = () => (
 export const FreeWifi = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="48"
-    height="38"
+    width="40"
+    height="30"
     viewBox="0 0 48 38"
     fill="none"
   >
@@ -650,8 +650,8 @@ export const ZoomOutIcon = () => {
 export const BtnPrev = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="48"
-    height="48"
+    width="40"
+    height="40"
     viewBox="0 0 48 48"
     fill="none"
   >
@@ -672,8 +672,8 @@ export const BtnPrev = () => (
 export const BtnNext = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="48"
-    height="48"
+    width="40"
+    height="40"
     viewBox="0 0 48 48"
     fill="none"
   >

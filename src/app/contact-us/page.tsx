@@ -1,8 +1,15 @@
 import { Container, Form, LazyLoadedMap, Section } from "@/components";
 import PageTopBanner from "@/components/PageTopBanner";
 import { contactLink } from "@/data/footerLink";
+import { Metadata } from "next";
 import Link from "next/link";
 
+
+
+export const metadata: Metadata = {
+  title: "Contact Us - Oak Climbing Resort | Plan Your Adventure in Uttarakhand",
+  description: "Get in touch with Oak Climbing Resort in Uttarakhand. Whether you have questions about our accommodations, climbing facilities, or bookings, we’re here to help. Reach out to plan your next adventure in the Himalayas",
+};
 const page = () => {
   return (
     <main className="py-14">
@@ -62,8 +69,8 @@ const page = () => {
         </Container>
       </Section>
       <Section>
-        <div className="aspect-[4/1.3]">
-          <LazyLoadedMap src="" />
+        <div className="aspect-[4/1.5]">
+          <LazyLoadedMap src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13909.639306415898!2d79.6468379!3d29.3582872!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a0967448d26bc7%3A0xb6b5182e8f792bdc!2sOak%20Climbing%20Resort!5e0!3m2!1sen!2sin!4v1730871361513!5m2!1sen!2sin" />
         </div>
       </Section>
     </main>
