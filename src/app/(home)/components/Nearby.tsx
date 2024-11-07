@@ -3,7 +3,6 @@ import {
   Section,
   SectionHeading,
   Container,
-  Button,
   SliderSwip,
   Card,
 } from "@/components";

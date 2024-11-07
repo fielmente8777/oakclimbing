@@ -1,5 +1,5 @@
 "use client"
-import { Card, Container, Section, SliderSwip } from "@/components";
+import { Container, Section, SliderSwip } from "@/components";
 import PageTopBanner from "@/components/PageTopBanner";
 import Image from "next/image";
 import { Navigation } from "swiper/modules";
