@@ -25,7 +25,7 @@ const Card: React.FC<CardProps> = ({ data }) => {
           {data?.title}
         </h3>
       ) : (
-        <h3 className="text-xl text-center font-medium mt-4 text-dark">{data?.title}</h3>
+        <h3 className="text-[16px]  text-center font-semibold mt-4 text-dark">{data?.title}</h3>
       )}
     </div>
   );

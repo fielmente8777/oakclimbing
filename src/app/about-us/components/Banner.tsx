@@ -1,6 +1,8 @@
-import { Container, Section } from "@/components";
+"use client"
+import { Card, Container, Section, SliderSwip } from "@/components";
 import PageTopBanner from "@/components/PageTopBanner";
 import Image from "next/image";
+import { Navigation } from "swiper/modules";
 
 const Banner = () => {
   const data = [
@@ -22,7 +24,7 @@ const Banner = () => {
 
       <Section className="lg:-mt-[12rem] -mt-12">
         <Container>
-          <div className="flex flex-col gap-20">
+          <div className="hidden lg:flex flex-col gap-20 mt-10">
             <div className="grid grid-cols-4 gap-5 ">
               {data?.map((src, index) => (
                 <div
@@ -44,6 +46,30 @@ const Banner = () => {
               ))}
             </div>
           </div>
+
+          <div className="block lg:hidden">
+            <SliderSwip
+              data={data}
+              classNameSwiper="gallerySwiper"
+              slidePerView={1}
+              spaceBetween={10}
+              modules={[Navigation]}
+              navigation={true}
+            >
+              {(item) => (
+                <div className="w-full relative aspect-[4/3]">
+                  <Image
+                    src={item}
+                    alt="view"
+                    priority={true}
+                    fill
+                    className={`w-full h-full cursor-pointer object-cover`}
+                  />
+                </div>
+              )}
+            </SliderSwip>
+          </div>
+
         </Container>
       </Section>
     </section>

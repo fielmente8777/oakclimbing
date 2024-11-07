@@ -7,6 +7,7 @@ import {
   SliderSwip,
   Card,
 } from "@/components";
+import Link from "next/link";
 import { Autoplay, Pagination } from "swiper/modules";
 
 const Nearby = () => {
@@ -81,7 +82,10 @@ const Nearby = () => {
         </Container>
       </Section>
       <div className="flex justify-center pt-10">
-        <Button href="/accommodation">book now</Button>
+        <Link href="https://engine.eazotel.com?id=ccb9b5a8-c327-4c5e-a050-a05630a6954b&hid=76167589" target="_blank" className="w-fit source-code-pro rounded-lg capitalize px-5 py-2 bg-primary text-white flex items-center justify-center hover:scale-x-105 transition-all ease-in-out hover:bg-bgLight hover:text-primary hover:shadow-2xl font-medium border border-primary">
+          Book now
+
+        </Link>
       </div>
     </Section>
   );

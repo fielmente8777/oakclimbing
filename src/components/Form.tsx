@@ -51,7 +51,7 @@ const Form: React.FC = () => {
       const { data } = await axios.post(
         "https://nexon.eazotel.com/eazotel/addcontacts",
         {
-          Domain: "sumit",
+          Domain: "oakclimbingresort",
           // Domain: "", // Replace with your actual domain value
           email: userEmail,
           Name: userName,

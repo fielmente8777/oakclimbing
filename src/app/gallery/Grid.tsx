@@ -54,9 +54,8 @@ const Grid = () => {
           {data.map((src, index) => (
             <div
               key={index}
-              className={`${
-                gridPattern[index % gridPattern.length]
-              } overflow-hidden hover:border-4 border-white  hover:shadow-3xl shadow-2xl hover:-translate-y-1 hover:shadow-gray-600 duration-1000 transition ease-in-out relative aspect-auto`}
+              className={`${gridPattern[index % gridPattern.length]
+                } overflow-hidden hover:border-4 border-white  hover:shadow-3xl shadow-2xl hover:-translate-y-1 hover:shadow-gray-600 duration-1000 transition ease-in-out relative aspect-auto`}
             >
               <Image
                 src={src}
@@ -77,8 +76,8 @@ const Grid = () => {
           <SliderSwip
             data={data}
             classNameSwiper="gallerySwiper"
-            slideperview={1}
-            spacebetween={10}
+            slidePerView={1}
+            spaceBetween={10}
             modules={[Navigation]}
             navigation={true}
           >

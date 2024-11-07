@@ -47,6 +47,10 @@ const Aboutus = () => {
               <h2 className="text-3xl font-semibold playfair-display text-dark">
                 {data.title} <span className="text-primary">{data.span}</span>
               </h2>
+              {/* <h2 className="hidden lg:block text-4xl tracking-wide font-semibold playfair-display text-dark">
+                Discover luxury and <br /> welcoming hospitality at <br /><span className="text-primary">{data.span}</span>
+              </h2> */}
+
               <p className="text-normal text-[16px]">{data.description}</p>
               <Button href={data.href}>{data.label}</Button>
             </div>
