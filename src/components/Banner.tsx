@@ -13,7 +13,7 @@ const Banner: React.FC = () => {
           className="object-cover"
         /> */}
         <LazyLoadedVideo
-          src="https://eazotel-client-images.s3.ap-south-1.amazonaws.com/Wabi+Sabi+Resort.mp4"
+          src="https://eazotel-client-images.s3.ap-south-1.amazonaws.com/oakclimbing.mp4"
           autoPlay
           loop
           controls={false}

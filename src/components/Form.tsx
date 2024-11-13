@@ -149,7 +149,7 @@ const Form: React.FC = () => {
       // icon: <FillMessage />,
       type: "text",
       name: "",
-      placeholder: "Leave a comment here",
+      placeholder: "Enter your message",
       required: true,
       value: userMessage,
       onChange: (e: React.ChangeEvent<HTMLInputElement>) => {

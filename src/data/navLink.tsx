@@ -19,10 +19,10 @@ export const navLink = [
     name: "Gallery",
     path: "/gallery/",
   },
-  {
-    name: "Blogs",
-    path: "/blogs/",
-  },
+  // {
+  //   name: "Blogs",
+  //   path: "/blogs/",
+  // },
   {
     name: "Contact us",
     path: "/contact-us/",
