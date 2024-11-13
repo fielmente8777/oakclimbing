@@ -1,6 +1,6 @@
 interface props {
   title: string;
-  para: string;
+  para?: string;
 }
 
 const PageTopBanner: React.FC<props> = ({ title, para }) => {
