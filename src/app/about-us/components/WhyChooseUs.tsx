@@ -45,7 +45,7 @@ const WhyChooseUs = () => {
               <SliderSwip
                 data={data}
                 classNameSwiper="chooseUs"
-                slidePerView={1}
+                slidesPerView={1}
                 spaceBetween={10}
                 modules={[Navigation]}
                 navigation={true}

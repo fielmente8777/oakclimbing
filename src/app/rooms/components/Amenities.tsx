@@ -65,7 +65,7 @@ const Amenities = () => {
           <SliderSwip
             data={amenitiesCardsData}
             classNameSwiper="chooseUs"
-            slidePerView={1}
+            slidesPerView={1}
             spaceBetween={10}
             modules={[Navigation]}
             navigation={true}

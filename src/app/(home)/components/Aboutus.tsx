@@ -16,7 +16,7 @@ const Aboutus = () => {
     label: "About Us",
     href: "/about-us",
     image: [
-      "/images/outside2.webp",
+      "/images/swimming.webp",
       "/images/outside.webp",
       "/images/room.webp",
     ],

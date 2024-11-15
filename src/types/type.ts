@@ -4,7 +4,8 @@ export interface roomCardType {
         id: number;
         name: string;
         description: string;
-        image: string | StaticImageData;
+        src?: string[] | StaticImageData[];
+        image?: string | StaticImageData;
         linkName: string;
         linkUrl: string;
     }
