@@ -5,7 +5,7 @@ import LazyLoadedVideo from "./LazyLoadedVideo";
 const Banner: React.FC = () => {
   return (
     <section className="pb-10 max-w-[1590px] w-full mx-auto">
-      <div className="w-full relative lg:aspect-[4/1.78] aspect-[4/2.5]">
+      <div className="w-full relative lg:aspect-[4/1.65] aspect-[4/2.5]">
         {/* <Image
           src="/images/banner.webp"
           alt="banner"
