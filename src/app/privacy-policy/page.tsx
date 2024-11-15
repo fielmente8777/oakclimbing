@@ -9,7 +9,7 @@ const page = () => {
       <Section>
         <Container>
           <div
-            className="policy_pages_dates"
+            className="policy_pages_dates "
             dangerouslySetInnerHTML={{
               __html: privacyPolicyDate,
             }}
