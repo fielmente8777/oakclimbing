@@ -9,6 +9,40 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About Us - Oak Climbing Resort | Adventure Awaits in Uttarakhand",
   description: "Discover Oak Climbing Resort in Uttarakhand, where passion for adventure meets the beauty of the Himalayas. Learn about our commitment to providing an unforgettable experience with premier rock climbing, scenic landscapes, and warm hospitality. Perfect for adventure lovers and nature enthusiasts alike",
+  alternates: {
+    canonical: "https://oakclimbingresort.com/about-us/",
+    languages: {
+      "en-US": "https://oakclimbingresort.com/en-US/about-us/",
+    }
+  },
+  openGraph: {
+    title: "About Us - Oak Climbing Resort | Adventure Awaits in Uttarakhand",
+    description: "Discover Oak Climbing Resort in Uttarakhand, where passion for adventure meets the beauty of the Himalayas. Learn about our commitment to providing an unforgettable experience with premier rock climbing, scenic landscapes, and warm hospitality. Perfect for adventure lovers and nature enthusiasts alike",
+    url: "https://oakclimbingresort.com/about-us/",
+    siteName: "Oak Climbing Resort",
+    locale: "en-US",
+    type: "website",
+    images: [
+      {
+        url: "https://oakclimbingresort.com/about-us/og-image.png",
+        width: 800,
+        height: 600,
+        alt: "Oak Climbing Resort",
+      },
+      {
+        url: "https://oakclimbingresort.com/about-us/og-image.png",
+        width: 900,
+        height: 800,
+        alt: "Oak Climbing Resort",
+      },
+      {
+        url: "https://oakclimbingresort.com/about-us/og-image.png",
+        width: 1000,
+        height: 800,
+        alt: "Oak Climbing Resort",
+      },
+    ],
+  }
 };
 
 const page = () => {
@@ -20,6 +54,7 @@ const page = () => {
       "Our accommodations are designed to offer a perfect blend of comfort and rustic charm. Guests can unwind in cozy rooms or eco-friendly cottages, all thoughtfully designed to reflect the beauty of the surrounding landscape. The resort’s restaurant serves fresh, locally sourced meals that capture the authentic flavors of the region, providing a true farm-to-table experience.",
       "With personalized service, warm hospitality, and a commitment to sustainability, Oak Climbing Resort is dedicated to creating memorable experiences for every guest. Whether you’re visiting for an adventure-filled holiday, a quiet getaway, or a team-building retreat, our resort is your gateway to the unparalleled beauty of the Kumaon hills.",
     ],
+
   };
   return (
     <main className="my-14">

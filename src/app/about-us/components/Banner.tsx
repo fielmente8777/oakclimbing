@@ -6,7 +6,7 @@ import { Navigation } from "swiper/modules";
 
 const Banner = () => {
   const data = [
-    "/images/outside3.webp",
+    "/images/outside20.webp",
     "/images/outside4.webp",
     "/images/outside5.webp",
     "/images/outside6.webp",

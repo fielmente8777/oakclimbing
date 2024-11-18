@@ -31,7 +31,7 @@ const Aboutus = () => {
                 <div
                   key={index}
                   className={`${gridPattern[index % gridPattern.length]
-                    } overflow-hidden  hover:shadow-3xl duration-1000 transition ease-in-out relative aspect-auto`}
+                    } overflow-hidden  hover:shadow-3xl duration-1000 transition ease-in-out relative aspect-auto lg:aspect-[4/2.8]`}
                 >
                   <Image
                     src={src}

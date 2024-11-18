@@ -8,6 +8,41 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Gallery - Oak Climbing Resort | Explore the Beauty of Uttarakhand",
   description: "Browse the Oak Climbing Resort gallery and experience the beauty of Uttarakhand. See breathtaking views, thrilling climbing spots, cozy accommodations, and snapshots of unforgettable moments. Discover why our guests love staying in the heart of the Himalayas",
+  alternates: {
+    canonical: "https://oakclimbingresort.com/gallery/",
+    languages: {
+      "en-US": "https://oakclimbingresort.com/gallery/",
+    }
+  },
+  openGraph: {
+    title: "Gallery - Oak Climbing Resort | Explore the Beauty of Uttarakhand",
+    description: "Browse the Oak Climbing Resort gallery and experience the beauty of Uttarakhand. See breathtaking views, thrilling climbing spots, cozy accommodations, and snapshots of unforgettable moments. Discover why our guests love staying in the heart of the Himalayas",
+    url: "https://oakclimbingresort.com/gallery/",
+    siteName: "Oak Climbing Resort",
+    locale: "en-US",
+    type: "website",
+    images: [
+      {
+        url: "https://oakclimbingresort.com/gallery/og-image.png",
+        width: 800,
+        height: 600,
+        alt: "Oak Climbing Resort",
+      },
+      {
+        url: "https://oakclimbingresort.com/gallery/og-image.png",
+        width: 900,
+        height: 800,
+        alt: "Oak Climbing Resort",
+      },
+      {
+        url: "https://oakclimbingresort.com/gallery/og-image.png",
+        width: 1000,
+        height: 800,
+        alt: "Oak Climbing Resort",
+      },
+    ],
+  },
+
 };
 
 const page = () => {

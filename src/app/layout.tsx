@@ -78,6 +78,42 @@ const sourceSansProBlackItalic = localFont({
 export const metadata: Metadata = {
   title: "Oak Climbing Resort | Best Hotel and Resort in Mukteshwar Uttarakhand",
   description: "Experience the best resort in Mukteshwar, Uttarakhand. Enjoy luxury and comfort at top-rated hotels and resorts in Mukteshwar for an unforgettable retreat",
+  authors: [{ name: "OAK CLIMBING RESORT", url: "https://oakclimbingresort.com" }],
+  alternates: {
+    canonical: "https://oakclimbingresort.com",
+    languages: {
+      "en-US": "https://oakclimbingresort.com",
+    },
+  },
+  openGraph: {
+    title: "Oak Climbing Resort | Best Hotel and Resort in Mukteshwar Uttarakhand",
+    description: "Experience the best resort in Mukteshwar, Uttarakhand. Enjoy luxury and comfort at top-rated hotels and resorts in Mukteshwar for an unforgettable retreat",
+    url: "https://oakclimbingresort.com",
+    siteName: "Oak Climbing Resort",
+    locale: "en-US",
+    type: "website",
+    images: [
+      {
+        url: "https://oakclimbingresort.com/og-image.png",
+        width: 800,
+        height: 600,
+        alt: "Oak Climbing Resort",
+      },
+      {
+        url: "https://oakclimbingresort.com/og-image.png",
+        width: 900,
+        height: 800,
+        alt: "Oak Climbing Resort",
+      },
+      {
+        url: "https://oakclimbingresort.com/og-image.png",
+        width: 1000,
+        height: 800,
+        alt: "Oak Climbing Resort",
+      },
+
+    ],
+  },
 };
 
 export default function RootLayout({

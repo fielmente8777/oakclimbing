@@ -35,10 +35,10 @@ const ResortHighlights: React.FC = () => {
       image: "/images/himalayan-Views.webp",
       title: "Himalayan Views",
     },
-    {
-      image: "/images/Swimming-Pool.webp",
-      title: "Swimming Pool",
-    },
+    // {
+    //   image: "/images/Swimming-Pool.webp",
+    //   title: "Swimming Pool",
+    // },
     {
       image: "/images/Indoor-Play-Area.webp",
       title: "Indoor Play Area",
