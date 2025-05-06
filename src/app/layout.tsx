@@ -79,12 +79,29 @@ export const metadata: Metadata = {
   title: "Oak Climbing Resort | Best Hotel and Resort in Mukteshwar Uttarakhand",
   description: "Experience the best resort in Mukteshwar, Uttarakhand. Enjoy luxury and comfort at top-rated hotels and resorts in Mukteshwar for an unforgettable retreat",
   authors: [{ name: "OAK CLIMBING RESORT", url: "https://oakclimbingresort.com" }],
+  keywords: ["Oak Climbing Resort", "Hotel", "Resort", "Mukteshwar", "Uttarakhand", "Adventure", "Adventure Tourism", "Adventure Tourism Mukteshwar", "Adventure Tourism Uttarakhand", "Adventure Tourism Mukteshwar Uttarakhand", "Outdoor Adventure Activities", "Climbing and Adventure Stay", "Adventure Resort in Mukteshwar Uttarakhand", "Rock Climbing Getaway", "Climbing Adventure Packages", "Outdoor Rock Climbing Experience", "Best Climbing Resorts in Mukteshwar Uttarakhand", "Nature and Adventure Retreat", "Eco-Friendly Adventure Resorts", "Beginner-Friendly Climbing Resorts", "Rock Climbing Vacations", "Resorts for Outdoor Enthusiasts", "Stay and Climb Packages", "Luxury Climbing Resort", "Resorts with Rock Climbing Walls", "Climbing Resorts for Families", "Group Climbing Packages"],
   alternates: {
     canonical: "https://oakclimbingresort.com",
     languages: {
       "en-US": "https://oakclimbingresort.com",
     },
+
   },
+
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
   openGraph: {
     title: "Oak Climbing Resort | Best Hotel and Resort in Mukteshwar Uttarakhand",
     description: "Experience the best resort in Mukteshwar, Uttarakhand. Enjoy luxury and comfort at top-rated hotels and resorts in Mukteshwar for an unforgettable retreat",
@@ -113,6 +130,7 @@ export const metadata: Metadata = {
       },
 
     ],
+
   },
 };
 

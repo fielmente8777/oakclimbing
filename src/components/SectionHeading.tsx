@@ -18,10 +18,12 @@ const SectionHeading: React.FC<Props> = ({
   return (
     <article className={`text-center flex flex-col gap-4 ${className}`}>
       {h1 ? (
-        <h1 className="lg:text-5xl/tight playfair-display text-3xl uppercase font-bold text-primary">
-          {span && <span className="font-normal text-dark">{span}</span>}{" "}
-          {span && <br />} {title}
-        </h1>
+        <>
+          {span && <span className="font-normal lg:text-5xl playfair-display text-3xl uppercase text-dark">{span}</span>}
+          <h1 className="lg:text-5xl/tight playfair-display text-3xl uppercase font-bold text-primary">
+            {title}
+          </h1>
+        </>
       ) : (
         <h2 className="lg:text-[2.5rem]/none playfair-display text-2xl capitalize font-semibold text-primary">
           {span && <span className="font-normal">{span}</span>} {span && <br />}
