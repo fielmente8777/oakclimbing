@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.scss";
 import { Call, Footer, NavBar, Whatsapp } from "@/components";
+import RenderChatBot from "@/components/chatbot/RenderChatBot";
 
 const sourceSansProRegular = localFont({
   src: "./fonts/SourceSansPro-Regular.woff",
@@ -76,16 +77,47 @@ const sourceSansProBlackItalic = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Oak Climbing Resort | Best Hotel and Resort in Mukteshwar Uttarakhand",
-  description: "Experience the best resort in Mukteshwar, Uttarakhand. Enjoy luxury and comfort at top-rated hotels and resorts in Mukteshwar for an unforgettable retreat",
-  authors: [{ name: "OAK CLIMBING RESORT", url: "https://oakclimbingresort.com" }],
-  keywords: ["Oak Climbing Resort", "Hotel", "Resort", "Mukteshwar", "Uttarakhand", "Adventure", "Adventure Tourism", "Adventure Tourism Mukteshwar", "Adventure Tourism Uttarakhand", "Adventure Tourism Mukteshwar Uttarakhand", "Outdoor Adventure Activities", "Climbing and Adventure Stay", "Adventure Resort in Mukteshwar Uttarakhand", "Rock Climbing Getaway", "Climbing Adventure Packages", "Outdoor Rock Climbing Experience", "Best Climbing Resorts in Mukteshwar Uttarakhand", "Nature and Adventure Retreat", "Eco-Friendly Adventure Resorts", "Beginner-Friendly Climbing Resorts", "Rock Climbing Vacations", "Resorts for Outdoor Enthusiasts", "Stay and Climb Packages", "Luxury Climbing Resort", "Resorts with Rock Climbing Walls", "Climbing Resorts for Families", "Group Climbing Packages"],
+  title:
+    "Oak Climbing Resort | Best Hotel and Resort in Mukteshwar Uttarakhand",
+  description:
+    "Experience the best resort in Mukteshwar, Uttarakhand. Enjoy luxury and comfort at top-rated hotels and resorts in Mukteshwar for an unforgettable retreat",
+  authors: [
+    { name: "OAK CLIMBING RESORT", url: "https://oakclimbingresort.com" },
+  ],
+  keywords: [
+    "Oak Climbing Resort",
+    "Hotel",
+    "Resort",
+    "Mukteshwar",
+    "Uttarakhand",
+    "Adventure",
+    "Adventure Tourism",
+    "Adventure Tourism Mukteshwar",
+    "Adventure Tourism Uttarakhand",
+    "Adventure Tourism Mukteshwar Uttarakhand",
+    "Outdoor Adventure Activities",
+    "Climbing and Adventure Stay",
+    "Adventure Resort in Mukteshwar Uttarakhand",
+    "Rock Climbing Getaway",
+    "Climbing Adventure Packages",
+    "Outdoor Rock Climbing Experience",
+    "Best Climbing Resorts in Mukteshwar Uttarakhand",
+    "Nature and Adventure Retreat",
+    "Eco-Friendly Adventure Resorts",
+    "Beginner-Friendly Climbing Resorts",
+    "Rock Climbing Vacations",
+    "Resorts for Outdoor Enthusiasts",
+    "Stay and Climb Packages",
+    "Luxury Climbing Resort",
+    "Resorts with Rock Climbing Walls",
+    "Climbing Resorts for Families",
+    "Group Climbing Packages",
+  ],
   alternates: {
     canonical: "https://oakclimbingresort.com",
     languages: {
       "en-US": "https://oakclimbingresort.com",
     },
-
   },
 
   robots: {
@@ -103,8 +135,10 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Oak Climbing Resort | Best Hotel and Resort in Mukteshwar Uttarakhand",
-    description: "Experience the best resort in Mukteshwar, Uttarakhand. Enjoy luxury and comfort at top-rated hotels and resorts in Mukteshwar for an unforgettable retreat",
+    title:
+      "Oak Climbing Resort | Best Hotel and Resort in Mukteshwar Uttarakhand",
+    description:
+      "Experience the best resort in Mukteshwar, Uttarakhand. Enjoy luxury and comfort at top-rated hotels and resorts in Mukteshwar for an unforgettable retreat",
     url: "https://oakclimbingresort.com",
     siteName: "Oak Climbing Resort",
     locale: "en-US",
@@ -128,9 +162,7 @@ export const metadata: Metadata = {
         height: 800,
         alt: "Oak Climbing Resort",
       },
-
     ],
-
   },
 };
 
@@ -145,6 +177,7 @@ export default function RootLayout({
         className={`${sourceSansProRegular.variable} ${sourceSansProBlack.variable} ${sourceSansProBold.variable} ${sourceSansProSemiBold.variable} ${sourceSansProLight.variable} ${sourceSansProExtraLight.variable} ${sourceSansProItalic.variable} ${sourceSansProExtraLightItalic.variable} ${sourceSansProLightItalic.variable} ${sourceSansProSemiBoldItalic.variable} ${sourceSansProBoldItalic.variable} ${sourceSansProBlackItalic.variable} antialiased`}
         suppressHydrationWarning={true}
       >
+        <RenderChatBot />
         <NavBar />
         {children}
         <Footer />
