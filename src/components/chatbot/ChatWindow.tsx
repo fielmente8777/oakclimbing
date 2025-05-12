@@ -54,9 +54,7 @@ const ChatWindow = ({
   const [showFinalMessage, setShowFinalMessage] = useState(false);
   const [chat, setChat] = useState<ChatMessage[]>([]);
   const [checkInDate, setCheckInDate] = useState<Date | null>(null);
-  const [countryCode, setCountryCode] = useState<string | null>(
-    countries[0].code
-  );
+  const [countryCode, setCountryCode] = useState<string>("+91");
 
   const [startDate] = useState(new Date());
 
@@ -73,9 +71,9 @@ const ChatWindow = ({
   const chatEndRef = useRef<HTMLDivElement | null>(null);
   // const dateRef = useRef<HTMLInputElement | null>(null);
 
-  const selectCountryCode = (e: ChangeEvent<HTMLSelectElement>) => {
-    setCountryCode(e.target.value);
-  };
+  // const selectCountryCode = (e: ChangeEvent<HTMLSelectElement>) => {
+  //   setCountryCode(e.target.value);
+  // };
 
   // check date validation
   const isValidDate = (dateStr: string) => {
@@ -456,7 +454,7 @@ const ChatWindow = ({
         <p className="text-sm rounded-lg text-[#474747]">{title}</p>
 
         <div
-          className={`max-w-[80%] px-3 py-2 rounded-lg text-lg self-start bg-gray-200 text-gray-800`}
+          className={`max-w-[80%] px-3 py-2 rounded-lg text-sm self-start bg-gray-200 text-gray-800`}
         >
           {messages}
         </div>
@@ -464,7 +462,7 @@ const ChatWindow = ({
         {chat.map((msg, index) => (
           <>
             {msg.sender === "bot" && index !== 0 && (
-              <p className="text-lg rounded-lg text-[#474747]">{title}</p>
+              <p className="text-sm rounded-lg text-[#474747]">{title}</p>
             )}
 
             <div
@@ -478,7 +476,7 @@ const ChatWindow = ({
                     : "#EEEEEE"
                 }`,
               }}
-              className={`max-w-[85%] break-words whitespace-wrap px-3 py-2 rounded-lg text-lg ${
+              className={`max-w-[85%] break-words whitespace-wrap px-3 py-2 rounded-lg text-sm ${
                 msg.sender === "user"
                   ? "self-end bg-gray-100 text-white"
                   : "self-start bg-gray-200 text-gray-800"
@@ -492,7 +490,7 @@ const ChatWindow = ({
                       style={{
                         background: theme,
                       }}
-                      className="text-white rounded-full px-3 py-1"
+                      className="text-white text-sm rounded-full px-3 py-1"
                     >
                       {opt}
                     </div>
@@ -555,7 +553,7 @@ const ChatWindow = ({
         ))}
 
         {showFinalMessage && (
-          <div className="max-w-full px-3 py-2 rounded-lg text-lg self-start bg-gray-200 text-gray-800">
+          <div className="max-w-full px-3 py-2 rounded-lg text-sm self-start bg-gray-200 text-gray-800">
             {`🎉 ${finalMessage}` || "🎉 Thank you for your responses!"}
           </div>
         )}
@@ -591,8 +589,9 @@ const ChatWindow = ({
             <div className="w-full flex items-center">
               {messageFlows[currentIndex]?.key === "phone" && (
                 <select
-                  onChange={selectCountryCode}
-                  defaultValue={countries[0].code}
+                  onChange={(e)=>setCountryCode(e.target.value)}
+                  // defaultValue={countries[0].code}
+                  value={countryCode}
                 >
                   {countries.map((countryCode, idx) => (
                     <option key={idx} value={countryCode.code}>
@@ -669,6 +668,9 @@ const ChatWindow = ({
           </div>
         </form>
       )}
+      <span className="text-sm bg-white text-center py-2 text-black/50">
+        Powered by Eazotel
+      </span>
     </div>
   );
 };

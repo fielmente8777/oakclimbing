@@ -42,7 +42,7 @@ const RenderChatBot = () => {
           Name: `${name}`,
           Remark: "",
           Subject: null,
-          created_from: "Chatbot",
+          created_from: "Eazobot",
         },
         {
           headers: {
