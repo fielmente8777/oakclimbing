@@ -1,8 +1,8 @@
+import { Footer, NavBar, Whatsapp } from "@/components";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Script from "next/script";
 import "./globals.scss";
-import { Call, Footer, NavBar, Whatsapp } from "@/components";
-import RenderChatBot from "@/components/chatbot/RenderChatBot";
 
 const sourceSansProRegular = localFont({
   src: "./fonts/SourceSansPro-Regular.woff",
@@ -177,13 +177,24 @@ export default function RootLayout({
         className={`${sourceSansProRegular.variable} ${sourceSansProBlack.variable} ${sourceSansProBold.variable} ${sourceSansProSemiBold.variable} ${sourceSansProLight.variable} ${sourceSansProExtraLight.variable} ${sourceSansProItalic.variable} ${sourceSansProExtraLightItalic.variable} ${sourceSansProLightItalic.variable} ${sourceSansProSemiBoldItalic.variable} ${sourceSansProBoldItalic.variable} ${sourceSansProBlackItalic.variable} antialiased`}
         suppressHydrationWarning={true}
       >
-        <RenderChatBot />
         <NavBar />
         {children}
         <Footer />
         <Whatsapp />
-        <Call />
+        {/* <Call /> */}
       </body>
+      <Script id="chatbot-config" strategy="afterInteractive">
+        {`
+    window.eazbotConfig = {
+       ndid: "ccb9b5a8-c327-4c5e-a050-a05630a6954b",
+       hid: "73363787",
+    };
+  `}
+      </Script>
+      <Script
+        src="https://cb-script.dyq28lyxrazm2.amplifyapp.com/widget/lead-chatbot.js"
+        strategy="afterInteractive"
+      />
     </html>
   );
 }
