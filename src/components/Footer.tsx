@@ -126,13 +126,20 @@ const Footer: React.FC = () => {
             </p>
             <p className="text-center capitalize gap-1 flex items-center justify-center">
               <span>•</span> Designed & Developed by
-              <Link
+              {/* <Link
                 href="https://www.eazotel.com/"
                 target="_blank"
                 rel="noreferrer"
                 className="font-semibold"
               >
                 Eazotel
+              </Link> */}
+               <Link
+                href="https://www.fielmente.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Fielmente
               </Link>
             </p>
           </div>
